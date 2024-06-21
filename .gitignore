@@ -1,0 +1,8 @@
+# system file
+.DS_Store
+
+# temp files
+.fzf.zsh.swp
+
+# unsynced
+/unsync/*
