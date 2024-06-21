@@ -6,6 +6,8 @@
 
 ![](./img/editor.png)
 
+<img width="1072" alt="nvim" src="https://github.com/wzhudev/d/assets/12122021/4437d6d4-3cba-4410-92db-a40720fa0400">
+
 ## Prepare
 
 * [Fenghost](https://fenghost.net/) when in Mainland China
