@@ -148,4 +148,3 @@ function unproxy() {
 
 # starship
 eval "$(starship init zsh)"
-

@@ -85,8 +85,6 @@ git clone git@github.com:wzhudev/d.git .dotfiles
 # link dotfiles
 ln -fs ~/.dotfiles/.zshrc ~/.zshrc
 ln -fs ~/.dotfiles/.gitconfig ~/.gitconfig
-ln -fs ~/.dotfiles/.vimrc ~/.vimrc
-ln -fs ~/.dotfiles/.tmux.conf ~/tmux.conf.
 
 # macOS only
 ln -fs ~/.dotfiles/hammerspoon/init.lua ~/.hammerspoon/init.lua
