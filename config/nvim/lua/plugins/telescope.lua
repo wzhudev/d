@@ -7,8 +7,7 @@ return {
       selection_caret = "🐹 ",
       dynamic_preview_title = true, -- always show the title on the preview pane
       layout_strategy = "vertical",
-      -- TODO: change cutoff for small screen
-      layout_config = { prompt_position = "bottom", preview_height = 0.6 },
+      layout_config = { prompt_position = "bottom", preview_height = 0.6, preview_cutoff = 20 },
     }
   }
 }
