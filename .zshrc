@@ -145,6 +145,3 @@ function unproxy() {
 	unset HTTPS_PROXY
 	unset ALL_PROXY
 }
-
-# starship
-eval "$(starship init zsh)"

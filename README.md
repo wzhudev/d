@@ -87,7 +87,7 @@ ln -fs ~/.dotfiles/.zshrc ~/.zshrc
 ln -fs ~/.dotfiles/.gitconfig ~/.gitconfig
 
 # macOS only
-ln -fs ~/.dotfiles/hammerspoon/init.lua ~/.hammerspoon/init.lua
+ln -fs ~/.dotfiles/mac/hammerspoon/init.lua ~/.hammerspoon/init.lua
 
 source ~/.zshrc
 ```
