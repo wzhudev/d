@@ -6,3 +6,4 @@
 
 # unsynced
 /unsync/*
+!/unsync/.gitkeep

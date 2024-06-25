@@ -114,17 +114,13 @@ export LANG=C.UTF-8
 export LC_ALL=C.UTF-8
 export COLORTERM=truecolor
 
-# files that should not be synced
-[ -f "$HOME/.dotfiles/unsync/init.sh" ] && source $HOME/.dotfiles/unsync/init.sh
-
 # Linux and WSL
 if [[ "$OSTYPE" == "linux-gnu" ]]; then
   source $HOME/.dotfiles/linux/init.sh
 fi
 
-if [[ "$OSTYPE" == "darwin23.0" ]]; then
-  source $HOME/.dotfiles/mac/init.sh
-fi
+# files that should not be synced
+[ -f "$HOME/.dotfiles/unsync/init.sh" ] && source $HOME/.dotfiles/unsync/init.sh
 
 # fnm
 eval "$(fnm env --use-on-cd)"
@@ -140,8 +136,18 @@ alias resource="source ~/.zshrc"
 alias lg="lazygit"
 
 # proxy
+# on WSL you need to use wsl config at ./windows/.wslconfig
+function proxy() {
+	export ALL_PROXY="http://127.0.0.1:7890"
+	export HTTPS_PROXY="http://127.0.0.1:7890"
+	export HTTP_PROXY="http://127.0.0.1:7890"
+}
+
 function unproxy() {
 	unset HTTP_PROXY
 	unset HTTPS_PROXY
 	unset ALL_PROXY
 }
+
+# starship
+eval "$(starship init zsh)"
