@@ -60,7 +60,7 @@ Install packages with Homebrew:
 
 ```sh
 # install CLI utils
-brew install fzf fnm rustup-init git go lazygit tmux neovim ripgrep fd cloc tree bat gh starship
+brew install fzf fnm rustup-init git go lazygit tmux neovim ripgrep fd cloc tree bat gh starship btop bat
 
 # macOS only
 brew install --cask visual-studio-code raycast hammerspoon google-chrome

@@ -138,15 +138,15 @@ alias lg="lazygit"
 # proxy
 # on WSL you need to use wsl config at ./windows/.wslconfig
 function proxy() {
-	export ALL_PROXY="http://127.0.0.1:7890"
-	export HTTPS_PROXY="http://127.0.0.1:7890"
-	export HTTP_PROXY="http://127.0.0.1:7890"
+	export all_proxy="http://127.0.0.1:7890"
+	export https_proxy="http://127.0.0.1:7890"
+	export http_proxy="http://127.0.0.1:7890"
 }
 
 function unproxy() {
-	unset HTTP_PROXY
-	unset HTTPS_PROXY
-	unset ALL_PROXY
+	unsethttp_proxy 
+	unset https_proxy
+	unset all_proxy
 }
 
 # starship
