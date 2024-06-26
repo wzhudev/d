@@ -60,7 +60,7 @@ Install packages with Homebrew:
 
 ```sh
 # install CLI utils
-brew install fzf fnm rustup-init git go lazygit tmux neovim ripgrep fd cloc tree bat gh starship btop bat
+brew install fzf fnm rustup-init git go lazygit tmux neovim ripgrep fd cloc tree bat gh starship btop bat zellij
 
 # macOS only
 brew install --cask visual-studio-code raycast hammerspoon google-chrome
@@ -88,6 +88,7 @@ ln -fs ~/.dotfiles/.gitconfig ~/.gitconfig
 ln -fs ~/.dotfiles/.vimrc ~/.vimrc
 ln -fs ~/.dotfiles/.tmux.conf ~/.tmux.conf
 ln -fs ~/.dotfiles/config/nvim ~/.config/nvim
+ln -fs ~/.dotfiles/config/zellij ~/.config/zellij
 
 # macOS only
 ln -fs ~/.dotfiles/mac/hammerspoon/init.lua ~/.hammerspoon/init.lua

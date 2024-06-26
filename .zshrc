@@ -134,6 +134,7 @@ export PATH="$PATH:$(go env GOPATH)/bin"
 # alias
 alias resource="source ~/.zshrc"
 alias lg="lazygit"
+alias zj="zellij"
 
 # proxy
 # on WSL you need to use wsl config at ./windows/.wslconfig
