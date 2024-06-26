@@ -92,6 +92,7 @@ ln -fs ~/.dotfiles/config/zellij ~/.config/zellij
 
 # macOS only
 ln -fs ~/.dotfiles/mac/hammerspoon/init.lua ~/.hammerspoon/init.lua
+ln -fs ~/.dotfiles/mac/.alacritty.toml ~/.alacritty.toml
 
 source ~/.zshrc
 ```
