@@ -1,4 +1,5 @@
 return {
+  -- disable file name and position in winbar
   {
     "utilyre/barbecue.nvim",
     name = "barbecue",
