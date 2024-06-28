@@ -42,28 +42,12 @@ hs.hotkey.bind({ "alt" }, "e", function()
 	launchOrNextWindow("Google Chrome")
 end)
 
-hs.hotkey.bind({ "alt" }, "l", function()
-	launchOrNextWindow("企业微信")
-end)
-
 hs.hotkey.bind({ "alt" }, "v", function()
 	launchOrNextWindow("Visual Studio Code", "Code")
 end)
 
-hs.hotkey.bind({ "alt" }, "w", function()
-	launchOrNextWindow("Wechat")
-end)
-
 hs.hotkey.bind({ "alt" }, "t", function()
 	launchOrNextWindow("Alacritty")
-end)
-
-hs.hotkey.bind({ "alt" }, "f", function()
-	launchOrNextWindow("Figma")
-end)
-
-hs.hotkey.bind({ "alt" }, "n", function()
-	launchOrNextWindow("Notion")
 end)
 
 hs.notify.new({ title = "Hammerspoon", subTitle = "Configuration reloaded!" }):send()
