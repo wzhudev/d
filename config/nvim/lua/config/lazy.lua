@@ -17,7 +17,7 @@ require("lazy").setup({
     -- language supports
     { import = "lazyvim.plugins.extras.lang.json" },
     { import = "lazyvim.plugins.extras.lang.go" },
-    -- { import = "lazyvim.plugins.extras.lang.typescript" }, -- use typescript-tools
+    { import = "lazyvim.plugins.extras.lang.typescript" },
     { import = "lazyvim.plugins.extras.lang.tailwind" },
     -- plugins
     { import = "plugins" },
