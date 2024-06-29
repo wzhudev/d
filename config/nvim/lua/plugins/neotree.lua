@@ -2,7 +2,7 @@ return {
   {
     "nvim-neo-tree/neo-tree.nvim",
     opts = {
-      -- Change neotree icons
+      -- Change neotree icons to make it more beautiful
       default_component_configs = {
         modified = {
           symbol = "",
