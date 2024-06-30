@@ -1,11 +1,13 @@
 #!/bin/bash
 
+# This script changes the Alacritty icon to work better with the macOS Dock.
+
 set -eo pipefail
 
 icon_path=/Applications/Alacritty.app/Contents/Resources/alacritty.icns
 if [ ! -f "$icon_path" ]; then
-  echo "Can't find existing icon, make sure Alacritty is installed"
-  exit 1
+	echo "Can't find existing icon, make sure Alacritty is installed"
+	exit 1
 fi
 
 echo "Backing up existing icon"
@@ -14,8 +16,9 @@ mv "$icon_path" "$icon_path.backup-$hash"
 
 echo "Downloading replacement icon"
 icon_url=https://github.com/hmarr/dotfiles/files/8549877/alacritty.icns.gz
-curl -sL $icon_url | gunzip > "$icon_path"
+curl -sL $icon_url | gunzip >"$icon_path"
 
 touch /Applications/Alacritty.app
 killall Finder
 killall Dock
+
