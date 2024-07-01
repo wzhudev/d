@@ -50,4 +50,16 @@ hs.hotkey.bind({ "alt" }, "t", function()
 	launchOrNextWindow("Alacritty")
 end)
 
+hs.hotkey.bind({ "alt" }, "w", function()
+	launchOrNextWindow("WeChat")
+end)
+
+hs.hotkey.bind({ "alt" }, "q", function()
+	launchOrNextWindow("WeCom")
+end)
+
+hs.hotkey.bind({ "alt" }, "d", function()
+	launchOrNextWindow("Discord")
+end)
+
 hs.notify.new({ title = "Hammerspoon", subTitle = "Configuration reloaded!" }):send()
