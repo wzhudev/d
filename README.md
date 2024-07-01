@@ -61,9 +61,6 @@ Install packages with Homebrew:
 ```sh
 # install CLI utils
 brew install fzf fnm rustup-init git go lazygit tmux neovim ripgrep fd cloc tree bat gh starship btop bat zellij
-
-# macOS only
-brew install --cask visual-studio-code raycast hammerspoon google-chrome
 ```
 
 Generate a ssh key and add the pub key to GitHub:
