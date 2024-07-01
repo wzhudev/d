@@ -89,10 +89,6 @@ ln -fs ~/.dotfiles/.tmux.conf ~/.tmux.conf
 ln -fs ~/.dotfiles/config/nvim ~/.config/nvim
 # ln -fs ~/.dotfiles/config/zellij ~/.config/zellij # not use for now
 
-# macOS only
-ln -fs ~/.dotfiles/mac/hammerspoon/init.lua ~/.hammerspoon/init.lua
-ln -fs ~/.dotfiles/mac/.alacritty.toml ~/.alacritty.toml
-
 source ~/.zshrc
 ```
 
