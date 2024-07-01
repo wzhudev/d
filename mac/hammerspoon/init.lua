@@ -38,7 +38,7 @@ function launchOrNextWindow(name, showName)
 	end
 end
 
-hs.hotkey.bind({ "alt" }, "e", function()
+hs.hotkey.bind({ "alt" }, "e", function() -- explorer
 	launchOrNextWindow("Google Chrome")
 end)
 
@@ -46,7 +46,7 @@ hs.hotkey.bind({ "alt" }, "v", function()
 	launchOrNextWindow("Visual Studio Code", "Code")
 end)
 
-hs.hotkey.bind({ "alt" }, "t", function()
+hs.hotkey.bind({ "alt" }, "t", function() -- terminal
 	launchOrNextWindow("Alacritty")
 end)
 
@@ -55,11 +55,15 @@ hs.hotkey.bind({ "alt" }, "w", function()
 end)
 
 hs.hotkey.bind({ "alt" }, "q", function()
-	launchOrNextWindow("WeCom")
+	launchOrNextWindow("企业微信")
 end)
 
 hs.hotkey.bind({ "alt" }, "d", function()
 	launchOrNextWindow("Discord")
+end)
+
+hs.hotkey.bind({ "alt" }, "n", function() -- note
+	launchOrNextWindow("Obsidian")
 end)
 
 hs.notify.new({ title = "Hammerspoon", subTitle = "Configuration reloaded!" }):send()
