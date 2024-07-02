@@ -16,6 +16,8 @@ Run the following command in your home directory.
 cd $HOME
 ```
 
+### Install zsh and plugins
+
 Install oh-my-zsh and plugins.
 
 ```sh
@@ -30,6 +32,8 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 ```
 
+### Install homebrew and dependencies
+
 Install Homebrew:
 
 ```sh
@@ -42,6 +46,8 @@ Install packages with Homebrew:
 # install CLI utils
 brew install fzf fnm rustup-init git go lazygit tmux neovim ripgrep fd cloc tree bat gh starship btop bat zellij
 ```
+
+### Download dotfiles and link
 
 Clone the project and link configuration files:
 
@@ -59,7 +65,9 @@ ln -fs ~/.dotfiles/config/nvim ~/.config/nvim
 source ~/.zshrc
 ```
 
-## Post install
+## Post setup
+
+### SSH
 
 Generate a ssh key and add the pub key to GitHub:
 
@@ -71,7 +79,15 @@ ssh-keygen
 cat ~/.ssh/id_rsa.pub
 ```
 
-Download a nerd font from <https://www.nerdfonts.com/font-downloads>.
+### Font
+
+Download a nerd font from <https://www.nerdfonts.com/font-downloads> and change the font of your terminal emulator to it. Personally I prefer CaskaydiaMono Nerd Font.
+
+### Setup Node.js
+
+Run `fnm env` and paste the outcomes to `./dotfiles/unsync/init.sh` to set Node.js environment.
+
+### Per-platform
 
 Read the following instructions for your platform:
 
@@ -83,7 +99,7 @@ Read the following instructions for your platform:
 
 Put things under folder .unsync if I do not want to sync it across my devices. Use `unsync/init.sh` as the entrance file name.
 
-## Michenanuous
+## Miscellaneous
 
 Run the following command to set proxy if necessary.
 
