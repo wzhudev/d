@@ -2,6 +2,12 @@
 
 > Set up a new Mac / WSL dev environment with CLI tools, Application and settings.
 
+* zsh & oh-my-zsh & starship
+* Editors: neovim & LazyVim
+* Languages: Node.js (based on fnm) & Rust & Go
+* Terminal Multiplexer: tmux (with batteries) & zellij
+* TUI applications: lazygit & fzf & tmux & some personal choices :)
+
 ## Showcase
 
 ![](./img/editor.png)
