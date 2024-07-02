@@ -116,7 +116,7 @@ export COLORTERM=truecolor
 
 # Linux and WSL
 if [[ "$OSTYPE" == "linux-gnu" ]]; then
-  source $HOME/.dotfiles/linux/init.sh
+  source $HOME/.dotfiles/wsl/init.sh
 fi
 
 # files that should not be synced
@@ -145,7 +145,7 @@ function proxy() {
 }
 
 function unproxy() {
-	unsethttp_proxy 
+	unset http_proxy 
 	unset https_proxy
 	unset all_proxy
 }
