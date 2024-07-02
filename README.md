@@ -8,32 +8,12 @@
 
 <img width="1072" alt="nvim" src="https://github.com/wzhudev/d/assets/12122021/4437d6d4-3cba-4410-92db-a40720fa0400">
 
-## Prepare
-
-* [Fenghost](https://fenghost.net/) when in Mainland China
-* [Visual Studio Code](https://code.visualstudio.com/)
-
 ## Setup
 
-Do these in my home directory.
+Run the following command in your home directory.
 
 ```sh
 cd $HOME
-```
-
-Set proxy first when in Mainland China.
-
-```sh
-# macOS
-export ALL_PROXY="http://127.0.0.1:7890"
-export HTTPS_PROXY="http://127.0.0.1:7890"
-export HTTP_PROXY="http://127.0.0.1:7890"
-
-# WSL
-host_ip=$(cat /etc/resolv.conf | grep "nameserver" | cut -f 2 -d " ")
-export ALL_PROXY="http://$host_ip:7890"
-export HTTP_PROXY="http://$host_ip:7890"
-export HTTPS_PROXY="http://$host_ip:7890"
 ```
 
 Install oh-my-zsh and plugins.
@@ -63,21 +43,11 @@ Install packages with Homebrew:
 brew install fzf fnm rustup-init git go lazygit tmux neovim ripgrep fd cloc tree bat gh starship btop bat zellij
 ```
 
-Generate a ssh key and add the pub key to GitHub:
-
-```sh
-# generate ssh-key
-ssh-keygen
-
-# get pub key
-cat ~/.ssh/id_rsa.pub
-```
-
 Clone the project and link configuration files:
 
 ```sh
 # download dotfiles
-git clone git@github.com:wzhudev/d.git .dotfiles
+git clone https://github.com:wzhudev/d.git .dotfiles
 
 # link dotfiles
 ln -fs ~/.dotfiles/.zshrc ~/.zshrc
@@ -89,6 +59,43 @@ ln -fs ~/.dotfiles/config/nvim ~/.config/nvim
 source ~/.zshrc
 ```
 
+## Post install
+
+Generate a ssh key and add the pub key to GitHub:
+
+```sh
+# generate ssh-key
+ssh-keygen
+
+# get pub key
+cat ~/.ssh/id_rsa.pub
+```
+
+Download a nerd font from <https://www.nerdfonts.com/font-downloads>.
+
+Read the following instructions for your platform:
+
+* [README-windows.md](./README-windows.md) for Windows.
+* [README-linux.md](./README-linux.md) for Linux and WSL.
+* [README-mac.md](./README-mac.md) for macOS.
+
 ## Unsync
 
 Put things under folder .unsync if I do not want to sync it across my devices. Use `unsync/init.sh` as the entrance file name.
+
+## Michenanuous
+
+Run the following command to set proxy if necessary.
+
+```sh
+# macOS & Linux
+export ALL_PROXY="http://127.0.0.1:7890"
+export HTTPS_PROXY="http://127.0.0.1:7890"
+export HTTP_PROXY="http://127.0.0.1:7890"
+
+# WSL
+host_ip=$(cat /etc/resolv.conf | grep "nameserver" | cut -f 2 -d " ")
+export ALL_PROXY="http://$host_ip:7890"
+export HTTP_PROXY="http://$host_ip:7890"
+export HTTPS_PROXY="http://$host_ip:7890"
+```
