@@ -114,9 +114,9 @@ export LANG=C.UTF-8
 export LC_ALL=C.UTF-8
 export COLORTERM=truecolor
 
-# Linux and WSL
+# Linuxbrew
 if [[ "$OSTYPE" == "linux-gnu" ]]; then
-  source $HOME/.dotfiles/wsl/init.sh
+  eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 fi
 
 # files that should not be synced
@@ -131,24 +131,35 @@ export PATH="$PATH:$(go env GOPATH)/bin"
 # fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
+# starship
+eval "$(starship init zsh)"
+
 # alias
 alias resource="source ~/.zshrc"
 alias lg="lazygit"
 alias zj="zellij"
 
+isWSL=$(grep -i WSL /proc/version)
+
 # proxy
 # on WSL you need to use wsl config at ./windows/.wslconfig
 function proxy() {
-	export all_proxy="http://127.0.0.1:7890"
-	export https_proxy="http://127.0.0.1:7890"
-	export http_proxy="http://127.0.0.1:7890"
+  if [[ isWSL ]] 
+  then
+	  host_ip=$(cat /etc/resolv.conf | grep "nameserver" | cut -f 2 -d " ")
+	  export all_proxy="http://$host_ip:7890"
+	  export http_proxy="http://$host_ip:7890"
+	  export https_proxy="http://$host_ip:7890"
+  else
+	  export all_proxy="http://127.0.0.1:7890"
+	  export https_proxy="http://127.0.0.1:7890"
+	  export http_proxy="http://127.0.0.1:7890"
+  fi
 }
 
 function unproxy() {
-	unset http_proxy 
+	unset http_proxy
 	unset https_proxy
 	unset all_proxy
 }
 
-# starship
-eval "$(starship init zsh)"
