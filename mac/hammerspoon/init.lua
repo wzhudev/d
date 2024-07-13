@@ -46,10 +46,6 @@ hs.hotkey.bind({ "alt" }, "v", function()
 	launchOrNextWindow("Visual Studio Code", "Code")
 end)
 
-hs.hotkey.bind({ "alt" }, "a", function() -- terminal
-	launchOrNextWindow("Alacritty")
-end)
-
 hs.hotkey.bind({ "alt" }, "t", function() -- terminal
 	launchOrNextWindow("Alacritty")
 end)
