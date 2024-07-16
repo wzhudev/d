@@ -13,18 +13,6 @@ return {
   keys = {
     -- Show all files, even those exclude by .gitignore.
     {
-      "<leader><space>",
-      function()
-        require("telescope.builtin").find_files({
-          no_ignore = true,
-          hidden = true,
-
-        })
-      end,
-      { slient = true, noremap = true },
-      desc = "Find All Files",
-    },
-    {
       "<leader>fp",
       "<cmd>Telescope commands<cr>",
       { slient = true, noremap = true },
