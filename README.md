@@ -59,14 +59,16 @@ Clone the project and link configuration files:
 
 ```sh
 # download dotfiles
-git clone https://github.com:wzhudev/d.git .dotfiles
+git clone https://github.com/wzhudev/d.git .dotfiles
+
+# make config dir if necessary
+mkdir .config
 
 # link dotfiles
 ln -fs ~/.dotfiles/.zshrc ~/.zshrc
 ln -fs ~/.dotfiles/.gitconfig ~/.gitconfig
 ln -fs ~/.dotfiles/.tmux.conf ~/.tmux.conf
 ln -fs ~/.dotfiles/config/nvim ~/.config/nvim
-# ln -fs ~/.dotfiles/config/zellij ~/.config/zellij # not use for now
 
 source ~/.zshrc
 ```
@@ -121,3 +123,7 @@ export ALL_PROXY="http://$host_ip:7890"
 export HTTP_PROXY="http://$host_ip:7890"
 export HTTPS_PROXY="http://$host_ip:7890"
 ```
+
+## Theme
+
+I use [catppuccin](https://github.com/catppuccin/catppuccin) for any applications.
