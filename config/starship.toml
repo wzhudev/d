@@ -1,11 +1,9 @@
 palette = "catppuccin_mocha"
 
 format = """
-[░▒▓](red)\
-[ 🚀 ](bg:red)\
-[](bg:pink fg:red)\
+[░▒▓](green)\
 $directory\
-[](fg:pink bg:blue)\
+[](fg:green bg:blue)\
 $git_branch\
 $git_status\
 [](fg:blue bg:peach)\
@@ -20,7 +18,7 @@ $php\
 # [ ](fg:teal)\
 
 [directory]
-style = "fg:base bg:pink"
+style = "fg:base bg:green"
 format = "[ $path ]($style)"
 truncation_length = 3
 truncation_symbol = "…/"
