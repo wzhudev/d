@@ -3,24 +3,24 @@ palette = "catppuccin_mocha"
 format = """
 [░▒▓](red)\
 [ 🚀 ](bg:red)\
-[](bg:green fg:red)\
+[](bg:pink fg:red)\
 $directory\
-[](fg:green bg:sky)\
+[](fg:pink bg:blue)\
 $git_branch\
 $git_status\
-[](fg:sky bg:yellow)\
+[](fg:blue bg:peach)\
 $nodejs\
 $rust\
 $golang\
 $php\
-[](fg:yellow) \
+[](fg:peach) \
   """
 
 # $time\
 # [ ](fg:teal)\
 
 [directory]
-style = "fg:base bg:green"
+style = "fg:base bg:pink"
 format = "[ $path ]($style)"
 truncation_length = 3
 truncation_symbol = "…/"
@@ -33,17 +33,17 @@ truncation_symbol = "…/"
 
 [git_branch]
 symbol = ""
-style = "bg:sky"
-format = '[[ $symbol $branch ](fg:base bg:sky)]($style)'
+style = "bg:blue"
+format = '[[ $symbol $branch ](fg:base bg:blue)]($style)'
 
 [git_status]
-style = "bg:sky"
-format = '[[($all_status$ahead_behind )](fg:base bg:sky)]($style)'
+style = "bg:blue"
+format = '[[($all_status$ahead_behind )](fg:base bg:blue)]($style)'
 
 [nodejs]
 symbol = ""
 style = "bg:#212736"
-format = '[[ $symbol ($version) ](fg:base bg:yellow)]($style)'
+format = '[[ $symbol ($version) ](fg:base bg:peach)]($style)'
 
 [rust]
 symbol = ""
