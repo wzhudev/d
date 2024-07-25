@@ -69,6 +69,7 @@ ln -fs ~/.dotfiles/.zshrc ~/.zshrc
 ln -fs ~/.dotfiles/.gitconfig ~/.gitconfig
 ln -fs ~/.dotfiles/.tmux.conf ~/.tmux.conf
 ln -fs ~/.dotfiles/config/nvim ~/.config/nvim
+ln -fs ~/.dotfiles/config/starship.toml ~/.config/starship.toml
 
 source ~/.zshrc
 ```
