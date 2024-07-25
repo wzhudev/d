@@ -144,7 +144,7 @@ alias zj="zellij"
 # proxy
 # on WSL you need to use wsl config at ./windows/.wslconfig
 function proxy() {
-  if [[ isWSL ]] 
+  if [[ $isWSL ]] 
   then
 	  host_ip=$(cat /etc/resolv.conf | grep "nameserver" | cut -f 2 -d " ")
 	  export all_proxy="http://$host_ip:7890"
