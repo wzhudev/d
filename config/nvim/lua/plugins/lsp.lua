@@ -63,7 +63,7 @@ return {
   {
     "nvim-lspconfig",
     opts = {
-      autoformat = false, -- disable auto format
+      -- diable auto format by setting vim.g.autoformat = false
       inlay_hints = { enabled = false },
     }
   },
@@ -98,20 +98,6 @@ return {
       },
     }
   },
-  -- {
-  --   "pmizio/typescript-tools.nvim",
-  --   dependencies = { "nvim-lua/plenary.nvim", "neovim/nvim-lspconfig" },
-  --   opts = {},
-  -- },
-  -- {
-  --   "WhoIsSethDaniel/mason-tool-installer.nvim",
-  --   opts = {
-  --     ensure_installed = {
-  --       "eslint_d"
-  --     },
-  --   },
-  -- },
-  -- https://github.com/LazyVim/LazyVim/discussions/830
   {
     "folke/noice.nvim",
     opts = function(_, opts)

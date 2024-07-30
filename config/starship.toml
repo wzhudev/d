@@ -40,7 +40,7 @@ format = '[[($all_status$ahead_behind )](fg:base bg:blue)]($style)'
 
 [nodejs]
 symbol = ""
-style = "bg:#212736"
+style = "bg:peach"
 format = '[[ $symbol ($version) ](fg:base bg:peach)]($style)'
 
 [rust]
@@ -50,8 +50,8 @@ format = '[[ $symbol ($version) ](fg:#769ff0 bg:#212736)]($style)'
 
 [golang]
 symbol = ""
-style = "bg:#212736"
-format = '[[ $symbol ($version) ](fg:#769ff0 bg:#212736)]($style)'
+style = "bg:peach"
+format = '[[ $symbol ($version) ](fg:base bg:peach)]($style)'
 
 [php]
 symbol = ""

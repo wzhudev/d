@@ -124,9 +124,8 @@ fi
 
 # fnm
 eval "$(fnm env --use-on-cd)"
-
-# go
-export PATH="$PATH:$(go env GOPATH)/bin"
+# gvm
+[[ -s "/home/$(whoami)/.gvm/scripts/gvm" ]] && source "/home/$(whoami)/.gvm/scripts/gvm"
 
 # fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
@@ -162,4 +161,5 @@ function unproxy() {
 	unset https_proxy
 	unset all_proxy
 }
+
 

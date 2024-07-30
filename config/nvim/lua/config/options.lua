@@ -8,3 +8,5 @@
 -- I see why this is neccessary to separate cwd and root dir. When you are working
 -- in a monorepo, you may need to search for files in the current pacakge, not
 -- in the whole project.
+
+vim.g.autoformat = false -- disable auto format
