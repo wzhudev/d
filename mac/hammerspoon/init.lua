@@ -39,7 +39,7 @@ function launchOrNextWindow(name, showName)
 end
 
 hs.hotkey.bind({ "alt" }, "e", function() -- explorer
-	launchOrNextWindow("Google Chrome")
+	launchOrNextWindow("Google Chrome Canary")
 end)
 
 hs.hotkey.bind({ "alt" }, "v", function()
