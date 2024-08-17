@@ -4,12 +4,11 @@ Install applications:
 
 ```sh
 # macOS only
-brew install --cask visual-studio-code raycast hammerspoon google-chrome
+brew install --cask visual-studio-code raycast hammerspoon microsoft-edge
 ```
 
 Link configuration files:
 
 ```sh
 ln -fs ~/.dotfiles/mac/hammerspoon/init.lua ~/.hammerspoon/init.lua
-ln -fs ~/.dotfiles/mac/.alacritty.toml ~/.alacritty.toml
 ```

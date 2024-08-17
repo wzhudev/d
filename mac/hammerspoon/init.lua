@@ -38,8 +38,8 @@ function launchOrNextWindow(name, showName)
 	end
 end
 
-hs.hotkey.bind({ "alt" }, "e", function() -- explorer
-	launchOrNextWindow("Google Chrome Canary")
+hs.hotkey.bind({ "alt" }, "e", function()
+	launchOrNextWindow("Microsoft Edge")
 end)
 
 hs.hotkey.bind({ "alt" }, "v", function()
@@ -47,23 +47,11 @@ hs.hotkey.bind({ "alt" }, "v", function()
 end)
 
 hs.hotkey.bind({ "alt" }, "t", function() -- terminal
-	launchOrNextWindow("Alacritty")
+	launchOrNextWindow("Terminal")
 end)
 
 hs.hotkey.bind({ "alt" }, "w", function()
 	launchOrNextWindow("WeChat")
-end)
-
-hs.hotkey.bind({ "alt" }, "q", function()
-	launchOrNextWindow("企业微信")
-end)
-
-hs.hotkey.bind({ "alt" }, "d", function()
-	launchOrNextWindow("Discord")
-end)
-
-hs.hotkey.bind({ "alt" }, "n", function() -- note
-	launchOrNextWindow("Notion")
 end)
 
 hs.notify.new({ title = "Hammerspoon", subTitle = "Configuration reloaded!" }):send()
