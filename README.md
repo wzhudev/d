@@ -3,16 +3,14 @@
 > Set up a new Mac / WSL dev environment with CLI tools, Application and settings.
 
 * zsh & oh-my-zsh & starship
-* Editors: neovim & LazyVim
+* Editors: VSCode
 * Languages: Node.js (based on fnm) & Rust & Go
-* Terminal Multiplexer: tmux (with batteries) & zellij
+* Terminal Multiplexer: tmux (with batteries)
 * TUI applications: lazygit & fzf & tmux & some personal choices :)
 
 ## Showcase
 
 ![](./img/editor.png)
-
-<img width="1072" alt="nvim" src="https://github.com/wzhudev/d/assets/12122021/4437d6d4-3cba-4410-92db-a40720fa0400">
 
 ## Setup
 
@@ -50,7 +48,7 @@ Install packages with Homebrew:
 
 ```sh
 # install CLI utils
-brew install fzf fnm rustup-init git go lazygit tmux neovim ripgrep fd cloc tree bat gh starship btop bat zellij
+brew install fzf fnm rustup-init git go lazygit tmux cloc tree gh starship 
 ```
 
 ### Download dotfiles and link
@@ -68,7 +66,6 @@ mkdir .config
 ln -fs ~/.dotfiles/.zshrc ~/.zshrc
 ln -fs ~/.dotfiles/.gitconfig ~/.gitconfig
 ln -fs ~/.dotfiles/.tmux.conf ~/.tmux.conf
-ln -fs ~/.dotfiles/config/nvim ~/.config/nvim
 ln -fs ~/.dotfiles/config/starship.toml ~/.config/starship.toml
 
 source ~/.zshrc

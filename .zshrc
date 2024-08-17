@@ -138,7 +138,11 @@ alias resource="source ~/.zshrc"
 alias lg="lazygit"
 alias zj="zellij"
 
-[ -f /proc/version ] && isWLS=$(grep -i WSL /proc/version)
+[ -f /proc/version ] && isWSL=$(grep -i WSL /proc/version)
+
+if [[ $isWSL ]]; then
+	source ~/.dotfiles/windows/wsl.sh
+fi
 
 # proxy
 # on WSL you need to use wsl config at ./windows/.wslconfig
