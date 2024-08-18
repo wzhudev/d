@@ -5,8 +5,7 @@
 * zsh & oh-my-zsh & starship
 * Editors: VSCode
 * Languages: Node.js (based on fnm) & Rust & Go
-* Terminal Multiplexer: tmux (with batteries)
-* TUI applications: lazygit & fzf & tmux & some personal choices :)
+* TUI applications: lazygit & fzf & some personal choices :)
 
 ## Showcase
 
@@ -48,7 +47,7 @@ Install packages with Homebrew:
 
 ```sh
 # install CLI utils
-brew install fzf fnm rustup-init git go lazygit tmux cloc tree gh starship 
+brew install fzf fnm rustup-init git go lazygit cloc tree gh starship 
 ```
 
 ### Download dotfiles and link
@@ -65,7 +64,6 @@ mkdir .config
 # link dotfiles
 ln -fs ~/.dotfiles/.zshrc ~/.zshrc
 ln -fs ~/.dotfiles/.gitconfig ~/.gitconfig
-ln -fs ~/.dotfiles/.tmux.conf ~/.tmux.conf
 ln -fs ~/.dotfiles/config/starship.toml ~/.config/starship.toml
 
 source ~/.zshrc
