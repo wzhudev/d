@@ -63,8 +63,10 @@ mkdir .config
 
 # link dotfiles
 ln -fs ~/.dotfiles/.zshrc ~/.zshrc
-ln -fs ~/.dotfiles/.gitconfig ~/.gitconfig
 ln -fs ~/.dotfiles/config/starship.toml ~/.config/starship.toml
+
+cp .dotfiles/.gitconfig.bak .gitconfig
+```
 
 source ~/.zshrc
 ```
@@ -95,8 +97,7 @@ Run `fnm env` and paste the outcomes to `./dotfiles/unsync/init.sh` to set Node.
 
 Read the following instructions for your platform:
 
-* [README-windows.md](./README-windows.md) for Windows.
-* [README-linux.md](./README-linux.md) for Linux and WSL.
+* [README-windows.md](./README-windows.md) for Windows & WSL.
 * [README-mac.md](./README-mac.md) for macOS.
 
 ## Unsync
@@ -119,7 +120,3 @@ export ALL_PROXY="http://$host_ip:7890"
 export HTTP_PROXY="http://$host_ip:7890"
 export HTTPS_PROXY="http://$host_ip:7890"
 ```
-
-## Theme
-
-I use [catppuccin](https://github.com/catppuccin/catppuccin) for any applications.
