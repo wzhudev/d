@@ -3,19 +3,12 @@ palette = "catppuccin_mocha"
 format = """
 [░▒▓](pink)\
 $directory\
-[](fg:pink bg:blue)\
 $git_branch\
 $git_status\
-[](fg:blue bg:peach)\
 $nodejs\
 $rust\
-$golang\
-$php\
-[](fg:peach) \
-  """
-
-# $time\
-# [ ](fg:teal)\
+$golang
+\\$  """
 
 [directory]
 style = "fg:base bg:pink"
@@ -23,46 +16,28 @@ format = "[ $path ]($style)"
 truncation_length = 3
 truncation_symbol = "…/"
 
-[directory.substitutions]
-"Documents" = "󰈙 "
-"Downloads" = " "
-"Music" = " "
-"Pictures" = " "
-
 [git_branch]
-symbol = ""
 style = "bg:blue"
-format = '[[ $symbol $branch ](fg:base bg:blue)]($style)'
+format = '[[ $branch ](fg:base bg:blue)]($style)'
 
 [git_status]
 style = "bg:blue"
 format = '[[($all_status$ahead_behind )](fg:base bg:blue)]($style)'
 
 [nodejs]
-symbol = ""
+symbol = "Node.js"
 style = "bg:peach"
 format = '[[ $symbol ($version) ](fg:base bg:peach)]($style)'
 
 [rust]
-symbol = ""
+symbol = "Rust"
 style = "bg:peach"
 format = '[[ $symbol ($version) ](fg:base bg:peach)]($style)'
 
 [golang]
-symbol = ""
+symbol = "Golang"
 style = "bg:peach"
 format = '[[ $symbol ($version) ](fg:base bg:peach)]($style)'
-
-[php]
-symbol = ""
-style = "bg:#212736"
-format = '[[ $symbol ($version) ](fg:#769ff0 bg:#212736)]($style)'
-
-[time]
-disabled = false
-time_format = "%R" # Hour:Minute Format
-style = "bg:teal"
-format = '[[  $time ](fg:base bg:teal)]($style)'
 
 [palettes.catppuccin_mocha]
 rosewater = "#f5e0dc"

@@ -1,14 +1,12 @@
 # dotfiles
 
-A minimal yet efficient config for development.
+![](./img/editor.png)
+
+An efficient and beautiful development environment setup for practical minimalists.
 
 * zsh & oh-my-zsh & starship
-* Editors: VSCode
-* TUI applications: lazygit & fzf & some personal choices :)
-
-## Showcase
-
-![](./img/editor.png)
+* Editors: VSCode + VSCodeVim
+* TUI tools: lazygit, fzf and a few others
 
 ## Setup
 
@@ -82,10 +80,6 @@ ssh-keygen
 # get pub key
 cat ~/.ssh/id_rsa.pub
 ```
-
-### Font
-
-Download a nerd font from <https://www.nerdfonts.com/font-downloads> and change the font of your terminal emulator to it. 
 
 ### Setup Node.js
 
