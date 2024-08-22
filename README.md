@@ -1,10 +1,9 @@
 # dotfiles
 
-> Set up a new Mac / WSL dev environment with CLI tools, Application and settings.
+A minimal yet efficient config for development.
 
 * zsh & oh-my-zsh & starship
 * Editors: VSCode
-* Languages: Node.js (based on fnm) & Rust & Go
 * TUI applications: lazygit & fzf & some personal choices :)
 
 ## Showcase
@@ -66,7 +65,6 @@ ln -fs ~/.dotfiles/.zshrc ~/.zshrc
 ln -fs ~/.dotfiles/config/starship.toml ~/.config/starship.toml
 
 cp .dotfiles/.gitconfig.bak .gitconfig
-```
 
 source ~/.zshrc
 ```
@@ -87,7 +85,7 @@ cat ~/.ssh/id_rsa.pub
 
 ### Font
 
-Download a nerd font from <https://www.nerdfonts.com/font-downloads> and change the font of your terminal emulator to it. Personally I prefer CaskaydiaMono Nerd Font.
+Download a nerd font from <https://www.nerdfonts.com/font-downloads> and change the font of your terminal emulator to it. 
 
 ### Setup Node.js
 
@@ -109,7 +107,7 @@ Put things under folder .unsync if I do not want to sync it across my devices. U
 Run the following command to set proxy if necessary.
 
 ```sh
-# macOS & Linux
+# macOS
 export ALL_PROXY="http://127.0.0.1:7890"
 export HTTPS_PROXY="http://127.0.0.1:7890"
 export HTTP_PROXY="http://127.0.0.1:7890"
