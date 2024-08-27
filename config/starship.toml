@@ -1,7 +1,6 @@
 palette = "catppuccin_mocha"
 
 format = """
-[░▒▓](pink)\
 $directory\
 $git_branch\
 $git_status\
