@@ -39,7 +39,7 @@ function launchOrNextWindow(name, showName)
 end
 
 hs.hotkey.bind({ "alt" }, "e", function()
-	launchOrNextWindow("Microsoft Edge")
+	launchOrNextWindow("Google Chrome Canary")
 end)
 
 hs.hotkey.bind({ "alt" }, "v", function()
@@ -48,6 +48,10 @@ end)
 
 hs.hotkey.bind({ "alt" }, "t", function() -- terminal
 	launchOrNextWindow("Terminal")
+end)
+
+hs.hotkey.bind({ "alt" }, "n", function() -- terminal
+	launchOrNextWindow("Notion")
 end)
 
 hs.hotkey.bind({ "alt" }, "w", function()
