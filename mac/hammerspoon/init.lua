@@ -54,16 +54,8 @@ hs.hotkey.bind({ "alt" }, "t", function() -- terminal
 	launchOrNextWindow("Terminal")
 end)
 
-hs.hotkey.bind({ "alt" }, "n", function() -- terminal
-	launchOrNextWindow("Notion")
-end)
-
 hs.hotkey.bind({ "alt" }, "w", function()
 	launchOrNextWindow("WeChat")
-end)
-
-hs.hotkey.bind({ "alt" }, "d", function()
-	launchOrNextWindow("Discord")
 end)
 
 hs.notify.new({ title = "Hammerspoon", subTitle = "Configuration reloaded!" }):send()
