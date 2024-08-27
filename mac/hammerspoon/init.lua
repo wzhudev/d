@@ -46,8 +46,12 @@ hs.hotkey.bind({ "alt" }, "v", function()
 	launchOrNextWindow("Visual Studio Code", "Code")
 end)
 
+hs.hotkey.bind({ "alt" }, "q", function()
+	launchOrNextWindow("企业微信")
+end)
+
 hs.hotkey.bind({ "alt" }, "t", function() -- terminal
-	launchOrNextWindow("iTerm", "iTerm2")
+	launchOrNextWindow("Terminal")
 end)
 
 hs.hotkey.bind({ "alt" }, "n", function() -- terminal
@@ -56,6 +60,10 @@ end)
 
 hs.hotkey.bind({ "alt" }, "w", function()
 	launchOrNextWindow("WeChat")
+end)
+
+hs.hotkey.bind({ "alt" }, "d", function()
+	launchOrNextWindow("Discord")
 end)
 
 hs.notify.new({ title = "Hammerspoon", subTitle = "Configuration reloaded!" }):send()

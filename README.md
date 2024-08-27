@@ -6,7 +6,7 @@ An efficient and beautiful development environment setup for practical minimalis
 
 * zsh & oh-my-zsh & starship
 * Editors: VSCode + VSCodeVim
-* TUI tools: lazygit, fzf and a few others
+* TUI tools: fzf and a few others
 
 ## Setup
 
@@ -44,7 +44,7 @@ Install packages with Homebrew:
 
 ```sh
 # install CLI utils
-brew install fzf fnm rustup-init git go lazygit cloc tree gh starship 
+brew install fzf fnm rustup-init git go cloc tree gh starship 
 ```
 
 ### Download dotfiles and link

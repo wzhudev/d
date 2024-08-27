@@ -135,8 +135,6 @@ eval "$(starship init zsh)"
 
 # alias
 alias resource="source ~/.zshrc"
-alias lg="lazygit"
-alias zj="zellij"
 
 [ -f /proc/version ] && isWSL=$(grep -i WSL /proc/version)
 
