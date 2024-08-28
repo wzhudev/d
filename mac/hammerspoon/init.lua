@@ -50,8 +50,16 @@ hs.hotkey.bind({ "alt" }, "q", function()
 	launchOrNextWindow("企业微信")
 end)
 
+hs.hotkey.bind({ "alt" }, "d", function()
+	launchOrNextWindow("Discord")
+end)
+
 hs.hotkey.bind({ "alt" }, "t", function() -- terminal
-	launchOrNextWindow("Terminal")
+	launchOrNextWindow("iTerm", "iTerm2")
+end)
+
+hs.hotkey.bind({ "alt" }, "f", function() -- terminal
+	launchOrNextWindow("Figma")
 end)
 
 hs.hotkey.bind({ "alt" }, "w", function()
