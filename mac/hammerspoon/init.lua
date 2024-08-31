@@ -54,13 +54,18 @@ hs.hotkey.bind({ "alt" }, "d", function()
 	launchOrNextWindow("Discord")
 end)
 
-hs.hotkey.bind({ "alt" }, "t", function() -- terminal
+hs.hotkey.bind({ "alt" }, "t", function()
 	launchOrNextWindow("iTerm", "iTerm2")
 end)
 
-hs.hotkey.bind({ "alt" }, "f", function() -- terminal
+hs.hotkey.bind({ "alt" }, "f", function()
 	launchOrNextWindow("Figma")
 end)
+
+hs.hotkey.bind({ "alt" }, "n", function()
+	launchOrNextWindow("Notion")
+end)
+
 
 hs.hotkey.bind({ "alt" }, "w", function()
 	launchOrNextWindow("WeChat")
