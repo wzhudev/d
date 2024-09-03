@@ -142,8 +142,6 @@ if [[ $isWSL ]]; then
 	source ~/.dotfiles/windows/wsl.sh
 fi
 
-alias lg="lazygit"
-
 # proxy
 # on WSL you need to use wsl config at ./windows/.wslconfig
 function proxy() {
