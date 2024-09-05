@@ -1,0 +1,7 @@
+[network]
+generateResolvConf = true
+
+[wsl2]
+networkingMode=mirrored
+dnsTunneling=true
+autoProxy=true

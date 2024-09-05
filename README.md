@@ -4,9 +4,10 @@
 
 An efficient and beautiful development environment setup for practical minimalists.
 
-* zsh & oh-my-zsh & starship
-* Editors: VSCode + VSCodeVim
-* TUI tools: fzf and a few others
+* Editors: VSCode & VSCodeVim, neovim & LazyVim
+* Languages: Node.js (based on fnm), Rust, Go
+* Terminal Multiplexer: tmux (with batteries)
+* TUI: lazygit, fzf, tmux, some personal choices :)
 
 ## Setup
 
@@ -43,8 +44,8 @@ Install Homebrew:
 Install packages with Homebrew:
 
 ```sh
-# install CLI utils
-brew install fzf fnm rustup-init git go cloc tree gh starship 
+# install TUI applications
+brew install fzf fnm rustup-init git go lazygit tmux neovim ripgrep fd cloc tree bat gh starship btop bat
 ```
 
 ### Download dotfiles and link
@@ -60,6 +61,8 @@ mkdir .config
 
 # link dotfiles
 ln -fs ~/.dotfiles/.zshrc ~/.zshrc
+ln -fs ~/.dotfiles/.tmux.conf ~/.tmux.conf
+ln -fs ~/.dotfiles/config/nvim ~/.config/nvim
 ln -fs ~/.dotfiles/config/starship.toml ~/.config/starship.toml
 
 cp .dotfiles/.gitconfig.bak .gitconfig
