@@ -145,17 +145,9 @@ fi
 # proxy
 # on WSL you need to use wsl config at ./windows/.wslconfig
 function proxy() {
-  if [[ $isWSL ]] 
-  then
-	  host_ip=$(cat /etc/resolv.conf | grep "nameserver" | cut -f 2 -d " ")
-	  export all_proxy="http://$host_ip:7890"
-	  export http_proxy="http://$host_ip:7890"
-	  export https_proxy="http://$host_ip:7890"
-  else
-	  export all_proxy="http://127.0.0.1:7890"
-	  export https_proxy="http://127.0.0.1:7890"
-	  export http_proxy="http://127.0.0.1:7890"
-  fi
+	export all_proxy="http://127.0.0.1:7890"
+	export https_proxy="http://127.0.0.1:7890"
+	export http_proxy="http://127.0.0.1:7890"
 }
 
 function unproxy() {
