@@ -115,3 +115,4 @@ export ALL_PROXY="http://$host_ip:7890"
 export HTTP_PROXY="http://$host_ip:7890"
 export HTTPS_PROXY="http://$host_ip:7890"
 ```
+
