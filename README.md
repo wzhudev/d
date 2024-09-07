@@ -7,7 +7,7 @@ An efficient and beautiful development environment setup for practical minimalis
 * Editors: VSCode & VSCodeVim, neovim & [LazyVim](https://lazyvim.org)
 * Languages: Node.js (based on fnm), Rust, Go
 * Terminal Multiplexer: tmux (with batteries)
-* TUI: lazygit, fzf, tmux
+* TUI: lazygit, fzf, tmux, starship
 
 ## Setup
 
@@ -63,6 +63,7 @@ mkdir .config
 ln -fs ~/.dotfiles/.zshrc ~/.zshrc
 ln -fs ~/.dotfiles/.tmux.conf ~/.tmux.conf
 ln -fs ~/.dotfiles/config/nvim ~/.config/nvim
+ln -fs ~/.dotfiles/config/starship.toml ~/.config/starship.toml
 
 cp .dotfiles/.gitconfig.bak .gitconfig
 

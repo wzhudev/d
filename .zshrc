@@ -128,6 +128,9 @@ eval "$(fnm env --use-on-cd)"
 # fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
+# starship
+eval "$(starship init zsh)"
+
 # lazygit
 alias lg="lazygit"
 
