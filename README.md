@@ -4,7 +4,7 @@
 
 An efficient and beautiful development environment setup for practical minimalists.
 
-* Editors: VSCode & VSCodeVim, neovim & LazyVim
+* Editors: VSCode & VSCodeVim, neovim & [LazyVim](https://lazyvim.org)
 * Languages: Node.js (based on fnm), Rust, Go
 * Terminal Multiplexer: tmux (with batteries)
 * TUI: lazygit, fzf, tmux, some personal choices :)
@@ -45,7 +45,7 @@ Install packages with Homebrew:
 
 ```sh
 # install TUI applications
-brew install fzf fnm rustup-init git go lazygit tmux neovim ripgrep fd cloc tree bat gh starship btop bat
+brew install fzf fnm rustup-init git go lazygit tmux neovim ripgrep fd cloc tree bat gh btop bat
 ```
 
 ### Download dotfiles and link
@@ -63,7 +63,6 @@ mkdir .config
 ln -fs ~/.dotfiles/.zshrc ~/.zshrc
 ln -fs ~/.dotfiles/.tmux.conf ~/.tmux.conf
 ln -fs ~/.dotfiles/config/nvim ~/.config/nvim
-ln -fs ~/.dotfiles/config/starship.toml ~/.config/starship.toml
 
 cp .dotfiles/.gitconfig.bak .gitconfig
 
@@ -115,4 +114,3 @@ export ALL_PROXY="http://$host_ip:7890"
 export HTTP_PROXY="http://$host_ip:7890"
 export HTTPS_PROXY="http://$host_ip:7890"
 ```
-
