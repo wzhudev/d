@@ -124,8 +124,6 @@ fi
 
 # fnm
 eval "$(fnm env --use-on-cd)"
-# gvm
-[[ -s "/home/$(whoami)/.gvm/scripts/gvm" ]] && source "/home/$(whoami)/.gvm/scripts/gvm"
 
 # fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

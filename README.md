@@ -7,7 +7,7 @@ An efficient and beautiful development environment setup for practical minimalis
 * Editors: VSCode & VSCodeVim, neovim & [LazyVim](https://lazyvim.org)
 * Languages: Node.js (based on fnm), Rust, Go
 * Terminal Multiplexer: tmux (with batteries)
-* TUI: lazygit, fzf, tmux, some personal choices :)
+* TUI: lazygit, fzf, tmux
 
 ## Setup
 
@@ -45,7 +45,7 @@ Install packages with Homebrew:
 
 ```sh
 # install TUI applications
-brew install fzf fnm rustup-init git go lazygit tmux neovim ripgrep fd cloc tree bat gh btop bat
+brew install fzf fnm rustup-init git go lazygit tmux neovim ripgrep fd cloc tree gh
 ```
 
 ### Download dotfiles and link
