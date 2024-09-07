@@ -4,8 +4,6 @@
 ********************************************
 */
 
-CapsLock::Control
-
 /*
 1- This AutoHotkey script enables you to open, restore, or minimize desired "Applications, Chrome Apps or Chrome Web Shortcuts", using your configured shortcuts key (hotkeys)
 
@@ -47,7 +45,8 @@ OpenOrShowAppBasedOnExeName(AppAddress)
 	{
 		IfWinActive
 		{
-			WinMinimize
+      ; Instead of minimizing the window, we toggle active window of the application.
+      HandleWindowsWithSameProcessAndClass(AppAddress)
 			Return
 		}
 		else
@@ -143,7 +142,6 @@ OpenOrShowAppBasedOnAppModelUserID(AppTitle, AppModelUserID)
 }
 
 
-
 /* ;
 ***************************************************
 ***** Switch open window  - UTILITY FUNCTIONS *****
@@ -179,6 +177,15 @@ HandleWindowsWithSameProcessAndClass(activeProcessName) {
 ********************************************
 */
 
+; Alt + Ctrl + v to open vscode
+!^v:: OpenOrShowAppBasedOnExeName("code.exe")
+
+; Alt + Ctrl + e to open Edge
+!^e:: OpenOrShowAppBasedOnExeName("msedge.exe")
+
+; Alt + Ctrl + t to open Windows Terminal
+!^t:: OpenOrShowAppBasedOnExeName("WindowsTerminal.exe")
+;!^t:: OpenOrShowAppBasedOnAppModelUserID("Windows Terminal", "Microsoft.WindowsTerminal_8wekyb3d8bbwe!App", "wt.exe")
 
 ; F7 - Open "Notepad"
 ; F7:: OpenOrShowAppBasedOnExeName("C:\Windows\notepad.exe")
@@ -204,3 +211,4 @@ if (activeProcessName = "chrome.exe") {
     HandleWindowsWithSameProcessAndClass(activeProcessName)
 }
 Return
+
