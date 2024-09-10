@@ -20,6 +20,7 @@ return {
     lazy = true,
     name = "catppuccin",
     opts = {
+      no_italic = true, -- Force no italic
       transparent_background = true,
       integrations = {
         aerial = true,
