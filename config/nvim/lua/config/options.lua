@@ -9,6 +9,6 @@
 -- in a monorepo, you may need to search for files in the current pacakge, not
 -- in the whole project.
 
-vim.g.autoformat = false -- disable auto format
+vim.g.autoformat = true -- disable auto format
 vim.opt.fixeol = false -- do not remote the last empty line and make eslint panic
 
