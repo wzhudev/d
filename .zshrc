@@ -131,13 +131,8 @@ eval "$(fnm env --use-on-cd)"
 # starship
 eval "$(starship init zsh)"
 
-# lazygit
-alias lg="lazygit"
-
 # alias
 alias resource="source ~/.zshrc"
-
-[ -f /proc/version ] && isWLS=$(grep -i WSL /proc/version)
 
 # proxy
 # on WSL you need to use wsl config at ./windows/.wslconfig
