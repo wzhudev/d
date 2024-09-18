@@ -6,7 +6,6 @@ An efficient and beautiful development environment setup for practical minimalis
 
 * Editors: VSCode & VSCodeVim
 * Languages: Node.js (based on fnm), Rust, Go
-* TUI: fzf, starship
 
 ## Setup
 
@@ -60,7 +59,6 @@ mkdir .config
 
 # link dotfiles
 ln -fs ~/.dotfiles/.zshrc ~/.zshrc
-ln -fs ~/.dotfiles/config/starship.toml ~/.config/starship.toml
 
 cp .dotfiles/.gitconfig.bak .gitconfig
 
