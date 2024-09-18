@@ -16,4 +16,3 @@ Refer to this [post](https://wrong.wang/flight-rules/20190718-%E4%BA%A4%E6%8D%A2
 ## WSL HTTP proxy
 
 - Append `.ssh/config` with the content in [ssh-config.bak](./windows/ssh-config.bak).
-

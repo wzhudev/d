@@ -4,7 +4,7 @@ Install applications:
 
 ```sh
 # macOS only
-brew install --cask visual-studio-code raycast hammerspoon microsoft-edge iterm2
+brew install --cask visual-studio-code raycast hammerspoon google-chrome
 ```
 
 Link configuration files:
