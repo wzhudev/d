@@ -1,8 +1,8 @@
 # dotfiles
 
-![](./img/editor.png)
+![](./img/screenshot.png)
 
-An efficient and beautiful development environment setup for practical minimalists.
+An efficient development environment for practical minimalists.
 
 * Editors: VSCode & VSCodeVim
 * Languages: Node.js (based on fnm), Rust, Go
@@ -43,7 +43,7 @@ Install packages with Homebrew:
 
 ```sh
 # install TUI applications
-brew install fzf fnm rustup-init git go cloc tree gh
+brew install fzf fnm rustup-init git go cloc tree gh lazygit
 ```
 
 ### Download dotfiles and link
