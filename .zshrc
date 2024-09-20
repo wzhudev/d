@@ -130,6 +130,7 @@ eval "$(fnm env --use-on-cd)"
 
 # alias
 alias resource="source ~/.zshrc"
+alias lg="lazygit"
 
 # proxy
 # on WSL you need to use wsl config at ./windows/.wslconfig
@@ -143,13 +144,4 @@ function unproxy() {
 	unset http_proxy
 	unset https_proxy
 	unset all_proxy
-}
-
-# only works on wslproxy
-function wslproxy(){
-    HOSTIP=$(cat /etc/resolv.conf | grep nameserver | awk '{ print $2 }')
-    PROXY_HTTP="http://${HOSTIP}:7890"
-    export http_proxy="${PROXY_HTTP}"
-    export https_proxy="${PROXY_HTTP}"
-    export all_proxy="${PROXY_HTTP}"
 }
