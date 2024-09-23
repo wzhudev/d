@@ -2,10 +2,11 @@
 
 ![](./img/screenshot.png)
 
-An efficient development environment for practical minimalists.
+An efficient development environment for practical minimalists. You can read about [Tools](https://wzhu.dev/tools) I am using on my blog.
 
 * Editors: VSCode & VSCodeVim
 * Languages: Node.js (based on fnm), Rust, Go
+* TUI tools: homebrew, oh-my-zsh, fzf, lazygit, gh
 
 ## Setup
 

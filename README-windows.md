@@ -5,9 +5,6 @@
 - WSL2
   - Refers to this [doc](https://github.com/microsoft/WSL/issues/10753#issuecomment-1814839310).
   - [.wslconfig](./windows/.wslconfig)
-- AutoHotKey
-  - Down 1.x version from https://www.autohotkey.com/ .
-  - [autohotkey.ahk](./windows/autohotkey.ahk)
 
 ## Remap CapsLock to Ctrl
 
