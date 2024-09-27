@@ -44,7 +44,7 @@ Install packages with Homebrew:
 
 ```sh
 # install TUI applications
-brew install fzf fnm rustup-init git go cloc tree gh lazygit
+brew install fzf fnm rustup-init git go cloc tree gh lazygit tmux
 ```
 
 ### Download dotfiles and link
@@ -60,6 +60,7 @@ mkdir .config
 
 # link dotfiles
 ln -fs ~/.dotfiles/.zshrc ~/.zshrc
+ln -fs ~/.dotfiles/.tmux.conf ~/.tmux.conf
 ln -fs ~/.dotfiles/config/starship.toml ~/.config/starship.toml
 
 cp .dotfiles/.gitconfig.bak .gitconfig
