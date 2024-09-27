@@ -139,8 +139,6 @@ alias resource="source ~/.zshrc"
 alias lg="lazygit"
 alias lz="lazydocker"
 
-[ -f /proc/version ] && isWLS=$(grep -i WSL /proc/version)
-
 # proxy
 # on WSL you need to use wsl config at ./windows/.wslconfig
 function proxy() {
