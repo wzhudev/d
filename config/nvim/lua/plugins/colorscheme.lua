@@ -21,7 +21,7 @@ return {
     name = "catppuccin",
     opts = {
       no_italic = true, -- Force no italic
-      transparent_background = true,
+      transparent_background = false,
       integrations = {
         aerial = true,
         alpha = true,
