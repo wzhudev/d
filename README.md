@@ -86,7 +86,7 @@ cat ~/.ssh/id_rsa.pub
 
 Run `fnm env` and paste the outcomes to `./dotfiles/unsync/init.sh` to set Node.js environment.
 
-### Per-platform
+## Per-platform
 
 Read the following instructions for your platform:
 
@@ -106,10 +106,4 @@ Run the following command to set proxy if necessary.
 export ALL_PROXY="http://127.0.0.1:7890"
 export HTTPS_PROXY="http://127.0.0.1:7890"
 export HTTP_PROXY="http://127.0.0.1:7890"
-
-# WSL
-host_ip=$(cat /etc/resolv.conf | grep "nameserver" | cut -f 2 -d " ")
-export ALL_PROXY="http://$host_ip:7890"
-export HTTP_PROXY="http://$host_ip:7890"
-export HTTPS_PROXY="http://$host_ip:7890"
 ```
