@@ -1,12 +1,18 @@
 palette = "catppuccin_mocha"
 
 format = """
+[░▒▓](pink)\
 $directory\
+[](fg:pink bg:blue)\
 $git_branch\
 $git_status\
+[](fg:blue bg:peach)\
 $nodejs\
 $rust\
-$golang """
+$golang\
+$php\
+[](fg:peach) \
+  """
 
 [directory]
 style = "fg:base bg:pink"
