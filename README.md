@@ -63,7 +63,7 @@ ln -fs ~/.dotfiles/.zshrc ~/.zshrc
 ln -fs ~/.dotfiles/.vimrc ~/.vimrc
 ln -fs ~/.dotfiles/config/starship.toml ~/.config/starship.toml
 
-cp .dotfiles/.gitconfig.bak .gitconfig
+cp .dotfiles/.gitconfig .gitconfig
 
 source ~/.zshrc
 ```
@@ -82,6 +82,12 @@ ssh-keygen
 cat ~/.ssh/id_rsa.pub
 ```
 
+Add then paste content of `./config/ssh` to `~/.ssh/config`:
+
+```sh
+cp ./dotfiles/config/ssh ~/.ssh/config
+```
+
 ### Setup Node.js
 
 Run `fnm env` and paste the outcomes to `./dotfiles/unsync/init.sh` to set Node.js environment.
@@ -90,8 +96,8 @@ Run `fnm env` and paste the outcomes to `./dotfiles/unsync/init.sh` to set Node.
 
 Read the following instructions for your platform:
 
-* [README-windows.md](./README-windows.md) for Windows & WSL.
-* [README-mac.md](./README-mac.md) for macOS.
+* [Windows.md](./README-windows.md) for Windows & WSL.
+* [macOS.md](./README-mac.md) for macOS.
 
 ## Unsync
 
@@ -102,7 +108,6 @@ Put things under folder .unsync if I do not want to sync it across my devices. U
 Run the following command to set proxy if necessary.
 
 ```sh
-# macOS
 export ALL_PROXY="http://127.0.0.1:7890"
 export HTTPS_PROXY="http://127.0.0.1:7890"
 export HTTP_PROXY="http://127.0.0.1:7890"

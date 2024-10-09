@@ -1,13 +1,13 @@
 # macOS
 
-Install applications:
+Install applications with Homebrew:
 
 ```sh
 # macOS only
 brew install --cask visual-studio-code raycast hammerspoon google-chrome
 ```
 
-Link configuration files:
+Link the config file of Hammerspoon:
 
 ```sh
 ln -fs ~/.dotfiles/mac/hammerspoon/init.lua ~/.hammerspoon/init.lua

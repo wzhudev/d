@@ -3,12 +3,7 @@
 ## Configuration
 
 - WSL2
-  - Refers to this [doc](https://github.com/microsoft/WSL/issues/10753#issuecomment-1814839310).
-  - [.wslconfig](./windows/.wslconfig)
+  - Put [.wslconfig](./windows/.wslconfig) under user home directory, refering to this [documentation](https://github.com/microsoft/WSL/issues/10753#issuecomment-1814839310).
 - AutoHotKey
-  - [AutoHotKey](https://www.autohotkey.com/)
-  - [AutoHotKey scripts](./windows/wzhudev.ahk)
-
-## WSL HTTP proxy
-
-- Append `.ssh/config` with the content in [ssh-config.bak](./windows/ssh-config.bak).
+  - Download [AutoHotKey](https://www.autohotkey.com/) V2.
+  - Compile [AutoHotKey scripts](./windows/wzhudev.ahk) and put the executable in the startup folder at C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Startup.
