@@ -2,11 +2,11 @@
 
 ![](./img/screenshot.png)
 
-An efficient development environment for practical minimalists. You can read about [Tools](https://wzhu.dev/tools) I am using on my blog.
+An efficient development environment for _practical minimalists_. Read about [Tools](https://wzhu.dev/tools).
 
-* Editors: VSCode & VSCodeVim, neovim & [LazyVim](https://lazyvim.org)
+* Editors: VSCode (VSCodeVim) and vim
 * Languages: Node.js (based on fnm), Rust, Go
-* TUI tools: homebrew, oh-my-zsh, fzf, lazygit, gh
+* TUI tools: homebrew, oh-my-zsh, starship, fzf, lazygit, gh
 
 ## Setup
 
@@ -61,7 +61,6 @@ mkdir .config
 # link dotfiles
 ln -fs ~/.dotfiles/.zshrc ~/.zshrc
 ln -fs ~/.dotfiles/.vimrc ~/.vimrc
-ln -fs ~/.dotfiles/config/starship.toml ~/.config/starship.toml
 
 cp .dotfiles/.gitconfig .gitconfig
 
