@@ -44,7 +44,7 @@ Install packages with Homebrew:
 
 ```sh
 # install TUI applications
-brew install fzf fnm rustup-init git go lazygit cloc tree gh starship neofetch
+brew install fzf fnm rustup-init git go lazygit cloc tree gh starship neofetch btop
 ```
 
 ### Download dotfiles and link
