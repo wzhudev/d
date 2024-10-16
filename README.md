@@ -44,7 +44,7 @@ Install packages with Homebrew:
 
 ```sh
 # install TUI applications
-brew install fzf fnm rustup-init git go lazygit cloc tree gh
+brew install fzf fnm rustup-init git go lazygit cloc tree gh starship neofetch
 ```
 
 ### Download dotfiles and link
@@ -84,7 +84,7 @@ cat ~/.ssh/id_rsa.pub
 Add then paste content of `./config/ssh` to `~/.ssh/config`:
 
 ```sh
-cp ./dotfiles/config/ssh ~/.ssh/config
+cp ~/.dotfiles/config/ssh ~/.ssh/config
 ```
 
 ### Setup Node.js
