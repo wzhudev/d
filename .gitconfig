@@ -1,5 +1,5 @@
 [core]
-	editor = vim
+	editor = nvim
 	quotepath = false
 
 [alias]
@@ -30,11 +30,7 @@
 	default = current
 
 [push]
-	autoSetupRemote = true
+	autoSetupRemote = true # this requires a higher version of Git
 
 [init]
 	defaultBranch = main
-
-# use ssh for github
-[url "ssh://git@github.com/"]
-  insteadOf = https://github.com/

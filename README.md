@@ -7,6 +7,7 @@ An efficient development environment for _practical minimalists_. Read about [To
 * Editors: VSCode (VSCodeVim) and vim
 * Languages: Node.js (based on fnm), Rust, Go
 * TUI tools: homebrew, oh-my-zsh, starship, fzf, lazygit, gh
+* Terminal Multiplexer: tmux (with batteries)
 
 ## Setup
 
@@ -44,7 +45,7 @@ Install packages with Homebrew:
 
 ```sh
 # install TUI applications
-brew install fzf fnm rustup-init git go lazygit cloc tree gh starship neofetch btop
+brew install fzf fnm rustup-init git go lazygit cloc tree gh starship neofetch btop tmux neovim ripgrep fd
 ```
 
 ### Download dotfiles and link
@@ -61,8 +62,11 @@ mkdir .config
 # link dotfiles
 ln -fs ~/.dotfiles/.zshrc ~/.zshrc
 ln -fs ~/.dotfiles/.vimrc ~/.vimrc
+ln -fs ~/.dotfiles/.tmux.conf ~/.tmux.conf
+ln -fs ~/.dotfiles/config/nvim ~/.config/nvim
+ln -fs ~/.dotfiles/config/starship.toml ~/.config/starship.toml
 
-cp .dotfiles/.gitconfig .gitconfig
+cp ~/.dotfiles/.gitconfig .gitconfig
 
 source ~/.zshrc
 ```
