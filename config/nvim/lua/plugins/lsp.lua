@@ -64,9 +64,9 @@ return {
   {
     "nvim-lspconfig",
     opts = {
-      -- diable auto format by setting vim.g.autoformat = false
-      inlay_hints = { enabled = true },
-      autoformat = false, -- disable auto format and leave that to LSP plugins such as ESLint
+      inlay_hints = { enabled = false }, -- make code hard to read
+      -- also diable auto format by setting vim.g.autoformat = false
+      autoformat = false,                -- disable auto format and leave that to LSP plugins such as ESLint
     },
   },
   {
