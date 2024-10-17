@@ -59,12 +59,14 @@ local function text_format(symbol)
 
   return res
 end
+
 return {
   {
     "nvim-lspconfig",
     opts = {
       -- diable auto format by setting vim.g.autoformat = false
-      inlay_hints = { enabled = false },
+      inlay_hints = { enabled = true },
+      autoformat = false, -- disable auto format and leave that to LSP plugins such as ESLint
     },
   },
   {
@@ -110,13 +112,13 @@ return {
       })
     end,
   },
-  -- {
-  --   'Wansmer/symbol-usage.nvim',
-  --   event = 'BufReadPre', -- need run before LspAttach if you use nvim 0.9. On 0.10 use 'LspAttach'
-  --   config = function()
-  --     require('symbol-usage').setup({
-  --       text_format = text_format,
-  --     })
-  --   end
-  -- }
+  {
+    'Wansmer/symbol-usage.nvim',
+    event = 'BufReadPre', -- need run before LspAttach if you use nvim 0.9. On 0.10 use 'LspAttach'
+    config = function()
+      require('symbol-usage').setup({
+        text_format = text_format,
+      })
+    end
+  }
 }
