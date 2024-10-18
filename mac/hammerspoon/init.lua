@@ -39,7 +39,7 @@ function launchOrNextWindow(name, showName)
 end
 
 hs.hotkey.bind({ "alt" }, "e", function()
-	launchOrNextWindow("Microsoft Edge")
+	launchOrNextWindow("Google Chrome")
 end)
 
 hs.hotkey.bind({ "alt" }, "v", function()
