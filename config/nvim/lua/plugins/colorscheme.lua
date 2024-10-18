@@ -10,10 +10,6 @@ return {
     opts = {
       transparent = false,
       style = "night",
-      styles = {
-        sidebars = "transparent",
-        floats = "transparent",
-      },
     },
   },
   -- {

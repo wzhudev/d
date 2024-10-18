@@ -46,12 +46,8 @@ hs.hotkey.bind({ "alt" }, "v", function()
 	launchOrNextWindow("Visual Studio Code", "Code")
 end)
 
-hs.hotkey.bind({ "alt" }, "q", function()
-	launchOrNextWindow("企业微信")
-end)
-
 hs.hotkey.bind({ "alt" }, "t", function()
-	launchOrNextWindow("Terminal")
+	launchOrNextWindow("Alacritty")
 end)
 
 hs.hotkey.bind({ "alt" }, "w", function()
