@@ -133,8 +133,8 @@ eval "$(starship init zsh)"
 
 # lazygit
 alias lg="lazygit"
-
-# alias
+alias vim="nvim"
+alias nv="nvim"
 alias resource="source ~/.zshrc"
 alias lg="lazygit"
 alias lz="lazydocker"
