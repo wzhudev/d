@@ -10,5 +10,5 @@
 -- in the whole project.
 
 vim.g.autoformat = true -- disable auto format
-vim.opt.fixeol = false -- do not remote the last empty line and make eslint panic
-
+vim.opt.eol = false
+vim.opt.fixeol = false  -- do not remote the last empty line and make eslint panic
