@@ -11,16 +11,13 @@ require("lazy").setup({
     { "LazyVim/LazyVim",                                      import = "lazyvim.plugins" },
     -- extras
     { import = "lazyvim.plugins.extras.ui.treesitter-context" },
-    -- { import = "lazyvim.plugins.extras.coding.copilot" },
     { import = "lazyvim.plugins.extras.util.octo" },
     { import = "lazyvim.plugins.extras.util.startuptime" },
     { import = "lazyvim.plugins.extras.editor.telescope" },
     -- language supports
     { import = "lazyvim.plugins.extras.lang.json" },
-    -- { import = "lazyvim.plugins.extras.lang.markdown" },
-    -- { import = "lazyvim.plugins.extras.linting.eslint" },
-    { import = "lazyvim.plugins.extras.lang.go" },
     { import = "lazyvim.plugins.extras.lang.typescript" },
+    -- { import = "lazyvim.plugins.extras.lang.rust" }, -- disabled because of https://github.com/williamboman/mason.nvim/issues/1737
     { import = "lazyvim.plugins.extras.lang.tailwind" },
     -- plugins
     { import = "plugins" },

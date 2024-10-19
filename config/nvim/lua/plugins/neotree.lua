@@ -1,6 +1,9 @@
 return {
   {
     "nvim-neo-tree/neo-tree.nvim",
+    keys = {
+      { "<leader>no", "<cmd>Neotree focus<CR>", desc = "Focus Neotree" },
+    },
     opts = {
       -- Change neotree icons to make it more beautiful
       default_component_configs = {
