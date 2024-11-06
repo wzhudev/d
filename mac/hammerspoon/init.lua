@@ -47,7 +47,7 @@ hs.hotkey.bind({ "alt" }, "v", function()
 end)
 
 hs.hotkey.bind({ "alt" }, "t", function()
-	launchOrNextWindow("Alacritty")
+	launchOrNextWindow("iTerm", "iTerm2")
 end)
 
 hs.hotkey.bind({ "alt" }, "w", function()
