@@ -17,7 +17,9 @@ require("lazy").setup({
     -- language supports
     { import = "lazyvim.plugins.extras.lang.json" },
     { import = "lazyvim.plugins.extras.lang.typescript" },
+    { import = "lazyvim.plugins.extras.lang.go" },
     -- { import = "lazyvim.plugins.extras.lang.rust" }, -- disabled because of https://github.com/williamboman/mason.nvim/issues/1737
+    -- use vscode for coding Rust now
     { import = "lazyvim.plugins.extras.lang.tailwind" },
     -- plugins
     { import = "plugins" },
