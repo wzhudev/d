@@ -60,7 +60,6 @@ mkdir .config
 
 # link dotfiles
 ln -fs ~/.dotfiles/.zshrc ~/.zshrc
-ln -fs ~/.dotfiles/.vimrc ~/.vimrc
 ln -fs ~/.dotfiles/config/starship.toml ~/.config/starship.toml
 
 cp ~/.dotfiles/.gitconfig .gitconfig
