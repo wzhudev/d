@@ -132,9 +132,6 @@ eval "$(fnm env --use-on-cd)"
 eval "$(starship init zsh)"
 
 # lazygit
-alias lg="lazygit"
-alias vim="nvim"
-alias nv="nvim"
 alias resource="source ~/.zshrc"
 alias lg="lazygit"
 alias lz="lazydocker"
