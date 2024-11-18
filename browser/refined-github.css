@@ -1,0 +1,5 @@
+/* Put this into "Custom CSS" of refined-github config. */
+pre, code, .blob-code, .blob-code-content, .blob-code-marker {
+  font-family: 'Cascadia Code NF', monospace !important;
+  font-size: 14px;
+}
