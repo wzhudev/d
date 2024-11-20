@@ -1,7 +1,5 @@
 # dotfiles
 
-![](./img/screenshot.png)
-
 An efficient development environment for _practical minimalists_. Read about [Tools](https://wzhu.dev/tools).
 
 * Editors: VSCode (VSCodeVim) and vim
@@ -94,16 +92,31 @@ cp ~/.dotfiles/config/ssh ~/.ssh/config
 
 Run `fnm env` and paste the outcomes to `./dotfiles/unsync/init.sh` to set Node.js environment.
 
-## Per-platform
-
-Read the following instructions for your platform:
-
-* [Windows.md](./README-windows.md) for Windows & WSL.
-* [macOS.md](./README-mac.md) for macOS.
-
 ## Unsync
 
 Put things under folder .unsync if I do not want to sync it across my devices. Use `unsync/init.sh` as the entrance file name.
+
+## Windows
+
+- WSL2
+  - Put [.wslconfig](./windows/.wslconfig) under user home directory, referring to this [documentation](https://github.com/microsoft/WSL/issues/10753#issuecomment-1814839310).
+- AutoHotKey
+  - Download [AutoHotKey](https://www.autohotkey.com/) V2.
+  - Compile [AutoHotKey scripts](./windows/wzhudev.ahk) and put the executable in the startup folder at C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Startup .
+
+## macOS
+
+Install applications with Homebrew:
+
+```sh
+brew install visual-studio-code raycast hammerspoon microsoft-edge alacritty
+```
+
+Link the config file of Hammerspoon:
+
+```sh
+ln -fs ~/.dotfiles/mac/hammerspoon/init.lua ~/.hammerspoon/init.lua
+```
 
 ## Miscellaneous
 
@@ -114,3 +127,5 @@ export ALL_PROXY="http://127.0.0.1:7890"
 export HTTPS_PROXY="http://127.0.0.1:7890"
 export HTTP_PROXY="http://127.0.0.1:7890"
 ```
+
+
