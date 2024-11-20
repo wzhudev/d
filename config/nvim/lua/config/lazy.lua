@@ -14,13 +14,13 @@ require("lazy").setup({
     { import = "lazyvim.plugins.extras.util.octo" },
     { import = "lazyvim.plugins.extras.util.startuptime" },
     { import = "lazyvim.plugins.extras.editor.telescope" },
-    -- language supports
     { import = "lazyvim.plugins.extras.lang.json" },
     { import = "lazyvim.plugins.extras.lang.typescript" },
     { import = "lazyvim.plugins.extras.lang.go" },
-    -- { import = "lazyvim.plugins.extras.lang.rust" }, -- disabled because of https://github.com/williamboman/mason.nvim/issues/1737
-    -- use vscode for coding Rust now
+    { import = "lazyvim.plugins.extras.dap.core" },
+    { import = "lazyvim.plugins.extras.test.core" },
     { import = "lazyvim.plugins.extras.lang.tailwind" },
+    { import = "lazyvim.plugins.extras.util.octo" },
     -- plugins
     { import = "plugins" },
   },
