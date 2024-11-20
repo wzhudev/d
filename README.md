@@ -5,7 +5,6 @@ An efficient development environment for _practical minimalists_. Read about [To
 * Editors: VSCode (VSCodeVim) and vim
 * Languages: Node.js (based on fnm), Rust, Go
 * TUI tools: homebrew, oh-my-zsh, starship, fzf, lazygit, gh
-* Terminal Multiplexer: tmux (with batteries)
 
 ## Setup
 
@@ -59,8 +58,6 @@ mkdir .config
 
 # link dotfiles
 ln -fs ~/.dotfiles/.zshrc ~/.zshrc
-ln -fs ~/.dotfiles/.tmux.conf ~/.tmux.conf
-ln -fs ~/.dotfiles/config/nvim ~/.config/nvim
 ln -fs ~/.dotfiles/config/starship.toml ~/.config/starship.toml
 
 cp ~/.dotfiles/.gitconfig .gitconfig
@@ -127,5 +124,3 @@ export ALL_PROXY="http://127.0.0.1:7890"
 export HTTPS_PROXY="http://127.0.0.1:7890"
 export HTTP_PROXY="http://127.0.0.1:7890"
 ```
-
-
