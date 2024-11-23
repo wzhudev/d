@@ -133,11 +133,8 @@ eval "$(starship init zsh)"
 
 # lazygit
 alias lg="lazygit"
-alias vim="nvim"
-alias nv="nvim"
 alias resource="source ~/.zshrc"
 alias lg="lazygit"
-alias lz="lazydocker"
 
 # proxy
 # on WSL you need to use wsl config at ./windows/.wslconfig
