@@ -4,7 +4,7 @@ An efficient development environment for _practical minimalists_. Read about [To
 
 * Editors: VSCode (VSCodeVim) and vim
 * Languages: Node.js (based on fnm), Rust, Go
-* TUI tools: homebrew, oh-my-zsh, starship, fzf, lazygit, gh
+* TUI tools: homebrew, fzf, lazygit, gh
 
 ## Setup
 
@@ -12,22 +12,6 @@ Run the following command in your home directory.
 
 ```sh
 cd $HOME
-```
-
-### Install zsh and plugins
-
-Install oh-my-zsh and plugins.
-
-```sh
-# perhaps should install zsh first on Linux
-# WSL
-sudo apt install zsh
-
-sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-
-# install zsh plugins
-git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 ```
 
 ### Install homebrew and dependencies
@@ -42,7 +26,7 @@ Install packages with Homebrew:
 
 ```sh
 # install TUI applications
-brew install fzf fnm rustup-init git go lazygit cloc tree gh starship neofetch btop tmux neovim ripgrep fd
+brew install fzf git lazygit cloc tree gh neofetch tmux neovim ripgrep fd
 ```
 
 ### Download dotfiles and link
@@ -57,12 +41,7 @@ git clone https://github.com/wzhudev/d.git .dotfiles
 mkdir .config
 
 # link dotfiles
-ln -fs ~/.dotfiles/.zshrc ~/.zshrc
-ln -fs ~/.dotfiles/config/starship.toml ~/.config/starship.toml
-
 cp ~/.dotfiles/.gitconfig .gitconfig
-
-source ~/.zshrc
 ```
 
 ## Post setup
@@ -106,7 +85,7 @@ Put things under folder .unsync if I do not want to sync it across my devices. U
 Install applications with Homebrew:
 
 ```sh
-brew install visual-studio-code raycast hammerspoon microsoft-edge alacritty
+brew install visual-studio-code raycast hammerspoon google-chrome
 ```
 
 Link the config file of Hammerspoon:
@@ -114,6 +93,8 @@ Link the config file of Hammerspoon:
 ```sh
 ln -fs ~/.dotfiles/platforms/mac/hammerspoon/init.lua ~/.hammerspoon/init.lua
 ```
+
+## Ubuntu
 
 ## Miscellaneous
 
