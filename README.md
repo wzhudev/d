@@ -22,3 +22,8 @@ python # Install Python3
 - [Windows](./platforms/windows/README.md)
 - [Linux Desktop (Ubuntu)](./platforms/linux/README.md)
 - [macOS](./platforms/mac/README.md)
+
+## neovim
+
+Neovim config can be found [here](https://github.com/wzhudev/n).
+
