@@ -27,3 +27,11 @@ color_prompt=yes
 # Simple prompt with path in the window/pane title and caret for typing line
 PS1=$'\uf0a9 '
 PS1="\[\e]0;\w\a\]$PS1"
+
+function proxy() {
+  export ALL_PROXY="http://127.0.0.1:7890" ; export HTTPS_PROXY="http://127.0.0.1:7890" ; export HTTP_PROXY="http://127.0.0.1:7890"
+}
+
+function unproxy() {
+  unset ALL_PROXY ; unset HTTPS_PROXY ; unset HTTP_RPOXY
+}

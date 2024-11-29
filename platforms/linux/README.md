@@ -5,6 +5,8 @@
 * [gh](https://github.com/cli/cli#installation) for GitHub
 * [lazygit](https://github.com/jesseduffield/lazygit) for Git
 * [mise](https://github.com/jdx/mise) to manager dev environments for multi languages
+* [zellij](https://github.com/basecamp/omakub/blob/90e0febcb9e1067aa336a5ca91e2665471fa068a/install/terminal/app-zellij.sh#L8) first 6 lines
+* [neovim](https://github.com/basecamp/omakub/blob/90e0febcb9e1067aa336a5ca91e2665471fa068a/install/terminal/app-neovim.sh) first 8 lines
 
 ```bash
 sudo apt update
@@ -44,7 +46,5 @@ Put things under folder .unsync if I do not want to sync it across my devices. U
 Run the following command to set proxy if necessary.
 
 ```sh
-export ALL_PROXY="http://127.0.0.1:7890"
-export HTTPS_PROXY="http://127.0.0.1:7890"
-export HTTP_PROXY="http://127.0.0.1:7890"
+export ALL_PROXY="http://127.0.0.1:7890" ; export HTTPS_PROXY="http://127.0.0.1:7890" ; export HTTP_PROXY="http://127.0.0.1:7890"
 ```
