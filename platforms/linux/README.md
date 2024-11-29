@@ -10,7 +10,7 @@
 
 ```bash
 sudo apt update
-sudo apt install bat zoxide eza
+sudo apt install bat zoxide eza fd-find ripgrep fzf
 ```
 
 ## Configuration
