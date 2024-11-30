@@ -20,6 +20,8 @@ alias ff="fzf --preview 'batcat --style=numbers --color=always {}'"
 alias fd='fdfind'
 alias lg='lazygit'
 
+alias gfa="git fetch --all"
+
 # Technicolor dreams
 force_color_prompt=yes
 color_prompt=yes
