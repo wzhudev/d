@@ -1,5 +1,9 @@
 # Windows Setup
 
+## Modify CapsLock
+
+Add contents in caps.reg to Windows Registry, to map CapsLock to LCtrl.
+
 ## Configuration
 
 Change [Windows Terminal](https://github.com/catppuccin/windows-terminal) themes.
