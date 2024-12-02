@@ -1,10 +1,21 @@
 # Windows Setup
 
+## Install Devtools
+
+```powershell
+winget install --id Git.Git -e --source winget
+winget install --id GitHub.cli
+
+python # Install Python3
+```
+
+Add install the latest version [Node.js](https://nodejs.org/zh-cn).
+
 ## Modify CapsLock
 
 Add contents in caps.reg to Windows Registry, to map CapsLock to LCtrl.
 
-## Configuration
+## Windows Terminal
 
 Change [Windows Terminal](https://github.com/catppuccin/windows-terminal) themes.
 
