@@ -1,3 +1,7 @@
+###
+# Shared configuration for Linux and macOS
+###
+
 alias ls='eza -lh --group-directories-first --icons'
 alias lsa='ls -a'
 alias lt='eza --tree --level=2 --long --icons --git'
@@ -8,7 +12,6 @@ alias lg='lazygit'
 
 alias gfa="git fetch --all"
 
-# Technicolor dreams
 force_color_prompt=yes
 color_prompt=yes
 
