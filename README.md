@@ -1,13 +1,12 @@
 # dotfiles
 
-An efficient development environment for _practical minimalists_. Read about [Tools](https://wzhu.dev/tools).
+Efficient development environment for _practical minimalists_. 
 
-* Editors: VSCode (VSCodeVim)
-* Languages: Node.js, Rust, Go
-* Developer tools: mise, fzf, lazygit, gh
+* VSCode (VSCodeVim)
+* Node.js, Rust, Go
+* mise, fzf, lazygit, gh
 
-## Setup 
-
-- [Windows](./platforms/windows/README.md)
+Pick your operating system to get started:
+- [Windows & WSL](./platforms/windows/README.md)
 - [macOS](./platforms/mac/README.md)
 - [Linux Desktop (Ubuntu)](./platforms/linux/README.md)
