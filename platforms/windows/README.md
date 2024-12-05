@@ -27,6 +27,13 @@ wsl.exe ~ -d Ubuntu -- zellij
 
 so it can open a terminal with Zellij opened.
 
+### 小鹤双拼
+
+> [!NOTE]
+> If you cannot read this, just ignore it.
+
+双击 [xiaohe.reg](./xiaohe.reg) 文件，将小鹤双拼输入法添加到注册表，然后修改微软拼音的输入模式。
+
 ### WSL
 
 Put [.wslconfig](./.wslconfig) under user home directory, referring to this [documentation](https://github.com/microsoft/WSL/issues/10753#issuecomment-1814839310).
