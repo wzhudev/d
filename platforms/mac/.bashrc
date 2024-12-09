@@ -1,5 +1,7 @@
 source ~/.dotfiles/platforms/unix/.bashrc
 
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
 if command -v mise &> /dev/null; then
     eval "$(/opt/homebrew/bin/mise activate bash)"
 fi
