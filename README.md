@@ -2,9 +2,9 @@
 
 Efficient development environment for _practical minimalists_. 
 
-* VSCode (VSCodeVim)
-* Node.js, Rust, Go
-* mise, fzf, lazygit, gh
+- VSCode (VSCodeVim)
+- Node.js, Rust, Go
+- mise, fzf, lazygit, gh
 
 Pick your operating system to get started:
 - [Windows & WSL](./platforms/windows/README.md)
