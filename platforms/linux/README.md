@@ -29,6 +29,8 @@ Copy configuration files:
 ```sh
 cp ~/.dotfiles/.gitconfig ~/.gitconfig
 cp ~/.dotfiles/config/ssh ~/.ssh/config
+
+ln -fs ~/.dotfiles/nvim ~/.config/nvim
 ```
 
 Source my own .bashrc files:
