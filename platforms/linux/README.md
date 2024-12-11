@@ -21,7 +21,6 @@ sudo apt install zoxide eza fzf
 Clone the project:
 
 ```sh
-# download dotfiles
 git clone https://github.com/wzhudev/d.git .dotfiles
 ```
 
