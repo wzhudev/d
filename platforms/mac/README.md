@@ -1,4 +1,4 @@
-# dotfiles
+# macOS
 
 ## Install Applications
 

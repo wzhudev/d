@@ -36,6 +36,10 @@ so it can open a terminal with Zellij opened.
 
 双击 [xiaohe.reg](./xiaohe.reg) 文件，将小鹤双拼输入法添加到注册表，然后修改微软拼音的输入模式。
 
+### Disable Win+L
+
+Double click [disable-win-l.reg](./disable-win-l.reg) to disable Win + L which will make Windows sleep.
+
 ### WSL
 
 Put [.wslconfig](./.wslconfig) under user home directory, referring to this [documentation](https://github.com/microsoft/WSL/issues/10753#issuecomment-1814839310).
