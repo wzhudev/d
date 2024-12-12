@@ -19,3 +19,5 @@ fi
 if command -v mise &>/dev/null; then
   eval "$(/opt/homebrew/bin/mise activate bash)"
 fi
+
+eval "$(starship init bash)"
