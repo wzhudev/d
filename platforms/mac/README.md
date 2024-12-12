@@ -11,7 +11,8 @@ Install Homebrew:
 Install applications with Homebrew:
 
 ```sh
-brew install fzf git lazygit cloc tree gh neofetch zellij visual-studio-code raycast hammerspoon google-chrome
+brew install fzf git lazygit cloc tree gh neofetch zellij starship bash
+brew install visual-studio-code raycast hammerspoon microsoft-edge alacritty
 ```
 
 ## Configuration
@@ -22,5 +23,5 @@ Link the config file of Hammerspoon:
 
 ```sh
 ln -fs ~/.dotfiles/platforms/mac/hammerspoon/init.lua ~/.hammerspoon/init.lua
-ln -fs ~/.dotfiles/platforms/mac/.alacritty.toml ~/.alacritty.toml
+ln -fs ~/.dotfiles/platforms/mac/alacritty/.alacritty.toml ~/.alacritty.toml
 ```
