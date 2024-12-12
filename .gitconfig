@@ -39,13 +39,5 @@
 [http]
 	proxy = http://127.0.0.1:7890 # Use proxy for Git
 
-[credential "https://github.com"]
-        helper = 
-        helper = !/usr/bin/gh auth git-credential
-
-[credential "https://gist.github.com"]
-        helper = 
-        helper = !/usr/bin/gh auth git-credential
-
 [url "https://github.com/"]
 	insteadOf = git@github.com:
