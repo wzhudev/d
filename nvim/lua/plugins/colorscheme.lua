@@ -10,6 +10,9 @@ return {
     lazy = true,
     name = "catppuccin",
     opts = {
+      flavour = "auto",
+      transparent_background = true,
+      no_italic = true,
       integrations = {
         aerial = true,
         alpha = true,
