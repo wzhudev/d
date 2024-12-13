@@ -16,7 +16,7 @@ And some other applications (just to make Windows easier to use, not related to 
 
 - Install **Auto Dark Mode** from Microsoft Store.
 - Install **Microsoft PowerToys** from Microsoft Store.
-- Install **[Easy Window Switcher](https://neosmart.net/EasySwitch/)**.
+- Install **[Window Switcher](https://github.com/sigoden/window-switcher)**.
 
 ## Configuration
 
@@ -47,3 +47,7 @@ Refer to [linux/README.md](../linux/README.md) to setup WSL.
 ### PowerToys
 
 Map CapsLock to LCtrl.
+
+### Window Switcher
+
+Put [window-switcher.ini](./window-switcher.ini) next to window-switcher.exe.
