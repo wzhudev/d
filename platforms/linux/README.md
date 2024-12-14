@@ -5,7 +5,6 @@
 * [gh](https://github.com/cli/cli#installation)
 * [lazygit](https://github.com/jesseduffield/lazygit)
 * [mise](https://github.com/jdx/mise)
-* [zellij](https://github.com/basecamp/omakub/blob/90e0febcb9e1067aa336a5ca91e2665471fa068a/install/terminal/app-zellij.sh#L8) first 6 lines
 * [starship](https://starship.rs/)
 
 Some applications can be installed via Ubuntu package manager:
