@@ -7,6 +7,7 @@ alias lta='lt -a'
 alias ff="fzf --preview 'batcat --style=numbers --color=always {}'"
 alias fd="fdfind"
 alias lg="lazygit"
+alias n="nvim"
 alias cd="z"
 alias gfa="git fetch --all"
 

@@ -47,7 +47,7 @@ hs.hotkey.bind({ "alt" }, "v", function()
 end)
 
 hs.hotkey.bind({ "alt" }, "t", function()
-	launchOrNextWindow("Terminal")
+	launchOrNextWindow("Alacritty")
 end)
 
 hs.hotkey.bind({ "alt" }, "w", function()
