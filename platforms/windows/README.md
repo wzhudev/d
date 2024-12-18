@@ -22,6 +22,18 @@ And some other applications (just to make Windows easier to use, not related to 
 
 Add contents in caps.reg to Windows Registry, to map CapsLock to LCtrl.
 
+### Windows Terminal
+
+Change [Windows Terminal](https://github.com/catppuccin/windows-terminal) themes.
+
+After all applications have been installed, change `command` of the Ubuntu profile to:
+
+```powershell
+wsl.exe ~ -d Ubuntu -- zellij
+```
+
+so it can open a terminal with Zellij opened.
+
 ### Disable Win+L
 
 Double click [disable-win-l.reg](./disable-win-l.reg) to disable <kbd>Win + L</kbd> which will make Windows sleep.

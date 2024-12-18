@@ -11,8 +11,8 @@ Install Homebrew:
 Install applications with Homebrew:
 
 ```sh
-brew install fzf git lazygit cloc tree gh starship bash
-brew install visual-studio-code raycast hammerspoon microsoft-edge
+brew install fzf git lazygit cloc tree gh neofetch zellij starship bash
+brew install visual-studio-code raycast hammerspoon google-chrome
 ```
 
 ## Configuration
