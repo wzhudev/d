@@ -28,7 +28,8 @@ yellow = "#e0af68"
 
 [colors.primary]
 background = "#1a1b26"
-foreground = "#a9b1d6"
+# foreground = "#a9b1d6"
+foreground = "#ffffff"
 
 [terminal.shell]
 program = "/opt/homebrew/bin/zellij"
