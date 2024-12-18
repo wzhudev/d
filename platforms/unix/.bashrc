@@ -10,6 +10,7 @@ alias lg="lazygit"
 alias n="nvim"
 alias cd="z"
 alias gfa="git fetch --all"
+alias ld="lazydocker"
 
 force_color_prompt=yes
 color_prompt=yes
