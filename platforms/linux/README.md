@@ -5,8 +5,9 @@
 * [gh](https://github.com/cli/cli#installation)
 * [lazygit](https://github.com/jesseduffield/lazygit)
 * [mise](https://github.com/jdx/mise)
-* [zellij](https://github.com/basecamp/omakub/blob/90e0febcb9e1067aa336a5ca91e2665471fa068a/install/terminal/app-zellij.sh#L8) first 6 lines
+* [nvim](https://github.com/basecamp/omakub/blob/90e0febcb9e1067aa336a5ca91e2665471fa068a/install/terminal/app-neovim.sh)
 * [starship](https://starship.rs/)
+* [zellij](https://github.com/basecamp/omakub/blob/90e0febcb9e1067aa336a5ca91e2665471fa068a/install/terminal/app-zellij.sh#L8) first 6 lines
 
 Some applications can be installed via Ubuntu package manager:
 
@@ -32,6 +33,7 @@ cp ~/.dotfiles/.gitconfig ~/.gitconfig
 cp ~/.dotfiles/config/ssh ~/.ssh/config
 
 ln -fs ~/.dotfiles/nvim ~/.config/nvim
+ln -fs ~/.dotfiles/config/starship/starship.toml ~/.config/starship.toml
 ```
 
 Source my own .bashrc files:
