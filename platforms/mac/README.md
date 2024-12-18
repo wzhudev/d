@@ -12,7 +12,8 @@ Install applications with Homebrew:
 
 ```sh
 brew install fzf git lazygit cloc tree gh neofetch zellij starship bash
-brew install visual-studio-code raycast hammerspoon microsoft-edge alacritty
+brew install visual-studio-code raycast hammerspoon google-chrome alacritty
+brew install --cask docker
 ```
 
 ## Configuration
