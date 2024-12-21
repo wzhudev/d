@@ -1,6 +1,6 @@
 format = """
 $directory\
-[](fg:#94E2D5 bg:#a6e3a1)\
+[](fg:#cba6f7 bg:#a6e3a1)\
 $git_branch\
 $git_status\
 [](fg:#a6e3a1 bg:#89b4fa)\
@@ -43,7 +43,7 @@ style = "bg:#cba6f7"
 disabled = true # Disabled by default
 
 [directory]
-style = "fg:#1e1e2e bg:#94E2D5"
+style = "fg:#1e1e2e bg:#cba6f7"
 format = "[ $path ]($style)"
 truncation_length = 3
 truncation_symbol = "…/"
