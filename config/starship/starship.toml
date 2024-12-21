@@ -18,10 +18,11 @@ $rust\
 $scala\
 [](fg:#89b4fa bg:#a6e3a1)\
 $docker_context\
-[](fg:#a6e3a1 bg:#fab387)\
-$time\
-[ ](fg:#fab387)\
+[ ](fg:#a6e3a1)\
 """
+
+# $time\
+# [ ](fg:#fab387)\
 
 # Disable the blank line at the start of the prompt
 # add_newline = false
