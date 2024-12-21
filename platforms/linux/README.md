@@ -27,6 +27,7 @@ cp ~/.dotfiles/config/ssh ~/.ssh/config
 ln -fs ~/.dotfiles/nvim ~/.config/nvim
 ln -fs ~/.dotfiles/config/starship/starship.toml ~/.config/starship.toml
 ln -fs ~/.dotfiles/config/tmux/.tmux.conf ~/.tmux.conf
+ln -fs ~/.dotfiles/config/bat ~/.config/bat
 ```
 
 Source my own .bashrc files:
