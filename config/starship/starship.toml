@@ -1,9 +1,9 @@
 format = """
 $directory\
-[](fg:#cba6f7 bg:#a6e3a1)\
+[](fg:#cba6f7 bg:#fab387)\
 $git_branch\
 $git_status\
-[](fg:#a6e3a1 bg:#89b4fa)\
+[](fg:#fab387 bg:#89b4fa)\
 $c\
 $elixir\
 $elm\
@@ -83,11 +83,11 @@ format = '[ $symbol ($version) ]($style)'
 
 [git_branch]
 symbol = ""
-style = "fg:#1e1e2e bg:#A6E3A1"
+style = "fg:#1e1e2e bg:#fab387"
 format = '[ $symbol $branch ]($style)'
 
 [git_status]
-style = "fg:#1e1e2e bg:#A6E3A1"
+style = "fg:#1e1e2e bg:#fab387"
 format = '[$all_status$ahead_behind ]($style)'
 
 [golang]
