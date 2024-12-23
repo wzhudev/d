@@ -33,4 +33,4 @@ background = "#1a1b26"
 foreground = "#ffffff"
 
 [terminal.shell]
-program = "/opt/homebrew/bin/zellij"
+program = "/opt/homebrew/bin/tmux"
