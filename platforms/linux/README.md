@@ -5,7 +5,7 @@
 Install applications with Homebrew:
 
 ```bash
-brew install zoxide eza fzf tldr git-delta gh lazygit lazydocker nvim mise starship tree cloc neofetch yazi
+brew install zoxide eza fzf tldr git-delta gh lazygit lazydocker mise starship tree cloc neofetch yazi
 ```
 
 ## Configuration
@@ -24,10 +24,8 @@ Copy configuration files:
 cp ~/.dotfiles/.gitconfig ~/.gitconfig
 cp ~/.dotfiles/config/ssh ~/.ssh/config
 
-ln -fs ~/.dotfiles/nvim ~/.config/nvim
 ln -fs ~/.dotfiles/config/starship/starship.toml ~/.config/starship.toml
 ln -fs ~/.dotfiles/config/tmux/.tmux.conf ~/.tmux.conf
-ln -fs ~/.dotfiles/config/bat ~/.config/bat
 ```
 
 Source my own .bashrc files:
