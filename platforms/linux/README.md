@@ -25,7 +25,6 @@ cp ~/.dotfiles/.gitconfig ~/.gitconfig
 cp ~/.dotfiles/config/ssh ~/.ssh/config
 
 ln -fs ~/.dotfiles/config/starship/starship.toml ~/.config/starship.toml
-ln -fs ~/.dotfiles/config/tmux/.tmux.conf ~/.tmux.conf
 ```
 
 Source my own .bashrc files:

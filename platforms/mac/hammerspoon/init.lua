@@ -47,11 +47,7 @@ hs.hotkey.bind({ "alt" }, "v", function()
 end)
 
 hs.hotkey.bind({ "alt" }, "t", function()
-	launchOrNextWindow("Alacritty")
-end)
-
-hs.hotkey.bind({ "alt" }, "w", function()
-	launchOrNextWindow("Notion")
+	launchOrNextWindow("Terminal")
 end)
 
 hs.notify.new({ title = "Hammerspoon", subTitle = "Configuration reloaded!" }):send()
