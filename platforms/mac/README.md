@@ -24,5 +24,5 @@ Link the config file of Hammerspoon:
 
 ```sh
 ln -fs ~/.dotfiles/platforms/mac/hammerspoon/init.lua ~/.hammerspoon/init.lua
-ln -fs ~/.dotfiles/platforms/mac/ghostty/config ~/.config/ghostty/config
+ln -fs ~/.dotfiles/config/ghostty/config ~/.config/ghostty/config
 ```

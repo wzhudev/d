@@ -38,7 +38,7 @@ function launchOrNextWindow(name, showName)
 	end
 end
 
-hs.hotkey.bind({ "alt" }, "c", function()
+hs.hotkey.bind({ "alt" }, "e", function()
 	launchOrNextWindow("Google Chrome")
 end)
 
