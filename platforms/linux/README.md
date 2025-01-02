@@ -1,49 +1,55 @@
-# Linux (& WSL) Setup
+# WSL Setup  
 
-## Install CLI Applications
+## Install Homebrew(Linuxbrew)
 
-Install applications with Homebrew:
-
-```bash
-brew install zoxide eza fzf tldr git-delta gh lazygit lazydocker nvim mise starship tree cloc neofetch yazi
+```shell
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
-## Configuration
+## Install TUI Applications  
 
-### Download dotfiles and link
+Use Homebrew to install the required terminal applications:  
 
-Clone the project:
+```bash  
+brew install zoxide eza fzf gh lazygit lazydocker nvim mise starship tree cloc neofetch
+```  
 
-```sh
-git clone https://github.com/wzhudev/d.git .dotfiles
-```
+## Configuration  
 
-Copy configuration files:
+### Clone Dotfiles and Link  
 
-```sh
-cp ~/.dotfiles/.gitconfig ~/.gitconfig
-cp ~/.dotfiles/config/ssh ~/.ssh/config
+Clone your dotfiles repository:  
 
-ln -fs ~/.dotfiles/nvim ~/.config/nvim
-ln -fs ~/.dotfiles/config/starship/starship.toml ~/.config/starship.toml
-ln -fs ~/.dotfiles/config/tmux/.tmux.conf ~/.tmux.conf
-ln -fs ~/.dotfiles/config/bat ~/.config/bat
-```
+```bash  
+git clone https://github.com/wzhudev/d.git .dotfiles  
+```  
 
-Source my own .bashrc files:
+Copy and link configuration files:  
 
-```sh
-echo "source ~/.dotfiles/platforms/linux/.bashrc" >> ~/.bashrc
-```
+```bash  
+cp ~/.dotfiles/.gitconfig ~/.gitconfig  
+cp ~/.dotfiles/config/ssh ~/.ssh/config  
 
-### Unsync
+ln -fs ~/.dotfiles/nvim ~/.config/nvim  
+ln -fs ~/.dotfiles/config/starship/starship.toml ~/.config/starship.toml  
+ln -fs ~/.dotfiles/config/tmux/.tmux.conf ~/.tmux.conf  
+```  
 
-Put things under folder .unsync if I do not want to sync it across my devices. Use `unsync/init.sh` as the entrance file name.
+### Update `.bashrc`  
 
-## Miscellaneous
+Add your custom `.bashrc` configuration by sourcing it:  
 
-Run the following command to set proxy if necessary.
+```bash  
+echo "source ~/.dotfiles/platforms/linux/.bashrc" >> ~/.bashrc  
+```  
 
-```sh
-export ALL_PROXY="http://127.0.0.1:7890" ; export HTTPS_PROXY="http://127.0.0.1:7890" ; export HTTP_PROXY="http://127.0.0.1:7890"
-```
+## Miscellaneous  
+
+If a proxy is required, use the following command to set it up:  
+
+```bash  
+export ALL_PROXY="http://127.0.0.1:7890"  
+export HTTPS_PROXY="http://127.0.0.1:7890"  
+export HTTP_PROXY="http://127.0.0.1:7890"  
+```  
+

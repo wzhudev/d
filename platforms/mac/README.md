@@ -1,26 +1,24 @@
-# macOS
+# macOS Setup
 
-## Install Applications
+Before starting, follow the [WSL Setup Guide](../linux/README.md) to configure shared applications and settings.
 
-Install Homebrew:
+## Install Applications with Homerew
 
-```sh
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-```
-
-Install applications with Homebrew:
+Use Homebrew to install the necessary applications:
 
 ```sh
 brew install git bash
-brew install visual-studio-code raycast hammerspoon google-chrome ghostty
+brew install visual-studio-code raycast hammerspoon microsoft-edge ghostty
 brew install --cask docker
 ```
 
 ## Configuration
 
-Checkout "Configuration" section in [linux/README.md](../linux/README.md).
+Refer to the "Configuration" section in the [Linux Setup Guide](../linux/README.md) for shared settings.
 
-Link the config file of Hammerspoon:
+### Link Configuration Files
+
+Link the configuration files for Hammerspoon and Ghostty:
 
 ```sh
 ln -fs ~/.dotfiles/platforms/mac/hammerspoon/init.lua ~/.hammerspoon/init.lua

@@ -1,53 +1,57 @@
-# Windows Setup
+# Windows Setup  
 
-## Install Applications
+## GUI Applications  
 
-Install applications using [winget](https://winget.run):
+Install VS Code using `winget`:  
 
-```powershell
-winget install --id Git.Git -e --source winget
-winget install --id GitHub.cli
-winget install -e --id Rustlang.Rustup
-winget install -e --id CoreyButler.NVMforWindows
-winget install -e --id Microsoft.VisualStudioCode
-```
+```powershell  
+winget install -e --id Microsoft.VisualStudioCode  
+```  
 
-And some other applications (just to make Windows easier to use, not related to development):
+Additionally, install the following applications to enhance usability (not directly related to development):  
 
-- Install **Auto Dark Mode** from Microsoft Store.
-- Install **Microsoft PowerToys** from Microsoft Store.
-- Install **[Window Switcher](https://github.com/sigoden/window-switcher)**.
+- **Auto Dark Mode**: Available on the Microsoft Store; automatically toggles Dark Mode.  
+- **Microsoft PowerToys**: Install via the Microsoft Store for various productivity utilities.  
+- **[Window Switcher](https://github.com/sigoden/window-switcher)**: Allows switching between windows of the same application.  
 
-## Configuration
+## Configuration  
 
-Add contents in caps.reg to Windows Registry, to map CapsLock to LCtrl.
+### Windows Terminal  
 
-### Windows Terminal
+Apply the [Catppuccin Mocha theme](https://github.com/catppuccin/windows-terminal) to Windows Terminal.  
 
-Change [Windows Terminal](https://github.com/catppuccin/windows-terminal) themes.
+After installing all necessary applications, update the `command` for the Ubuntu profile to:  
 
-After all applications have been installed, change `command` of the Ubuntu profile to:
+```powershell  
+wsl.exe ~ -d Ubuntu -- tmux  
+```  
 
-```powershell
-wsl.exe ~ -d Ubuntu -- zellij
-```
+This will open the terminal with `tmux` running by default.  
 
-so it can open a terminal with Zellij opened.
+### Disable Win+L  
 
-### Disable Win+L
+Run the [disable-win-l.reg](./disable-win-l.reg) file to disable the <kbd>Win + L</kbd> shortcut, which prevents Windows from entering sleep mode unintentionally.  
 
-Double click [disable-win-l.reg](./disable-win-l.reg) to disable <kbd>Win + L</kbd> which will make Windows sleep.
+### WSL  
 
-### WSL
+Place the [.wslconfig](./.wslconfig) file in your home directory. For reference, see this [documentation](https://github.com/microsoft/WSL/issues/10753#issuecomment-1814839310).  
 
-Put [.wslconfig](./.wslconfig) under user home directory, referring to this [documentation](https://github.com/microsoft/WSL/issues/10753#issuecomment-1814839310).
+### PowerToys  
 
-Refer to [linux/README.md](../linux/README.md) to setup WSL.
+Remap **Caps Lock** to **Left Ctrl** using PowerToys.  
 
-### PowerToys
+### Window Switcher  
 
-Map CapsLock to LCtrl.
+Save the [window-switcher.ini](./window-switcher.ini) file in the same directory as `window-switcher.exe`.  
 
-### Window Switcher
+## Development Environment on Windows  
 
-Put [window-switcher.ini](./window-switcher.ini) next to window-switcher.exe.
+Install the following tools using `winget`:  
+
+```powershell  
+winget install --id Git.Git -e --source winget  
+winget install --id GitHub.cli  
+winget install -e --id Rustlang.Rustup  
+winget install -e --id CoreyButler.NVMforWindows  
+```  
+

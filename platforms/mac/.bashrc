@@ -1,4 +1,4 @@
-source ~/.dotfiles/platforms/unix/.bashrc
+source ~/.dotfiles/platforms/posix/.bashrc
 
 eval "$(fzf --bash)"
 eval "$(zoxide init bash)"
