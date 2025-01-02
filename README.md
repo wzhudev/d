@@ -12,6 +12,8 @@ I primarily use WSL as my main development environment.
 
 I rely on two editors: [Visual Studio Code](https://code.visualstudio.com/) and Neovim. These days, I do most of my coding in Neovim. However, for company projects, I use VS Code because it performs better with large codebases and offers superior GitHub integration, especially for reviewing pull requests. For Neovim, I use [LazyVim](https://lazyvim.org) with minimal customizations.  
 
+I have uploaded my VS Code profile to this [gist](https://gist.github.com/wzhudev/578d871aa553e7c849be2924a67dc387).
+
 ### TUI Apps
 
 For terminal emulators, I use Windows Terminal on Windows and [Ghostty](https://ghostty.org) on macOS. If Ghostty could provide the same experience on Windows as it does on macOS, I’d make the switch.  
