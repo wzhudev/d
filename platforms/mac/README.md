@@ -21,6 +21,6 @@ Refer to the "Configuration" section in the [Linux Setup Guide](../linux/README.
 Link the configuration files for Hammerspoon and Ghostty:
 
 ```sh
-ln -fs ~/.dotfiles/platforms/mac/hammerspoon/init.lua ~/.hammerspoon/init.lua
+ln -fs ~/.dotfiles/config/hammerspoon/init.lua ~/.hammerspoon/init.lua
 ln -fs ~/.dotfiles/config/ghostty/config ~/.config/ghostty/config
 ```

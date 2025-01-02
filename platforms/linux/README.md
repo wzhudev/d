@@ -18,19 +18,18 @@ brew install zoxide eza fzf gh lazygit lazydocker nvim mise starship tree cloc n
 
 ### Clone Dotfiles and Link  
 
-Clone your dotfiles repository:  
+Clone this repository:  
 
 ```bash  
-git clone https://github.com/wzhudev/d.git .dotfiles  
+git clone https://github.com/wzhudev/dotfiles.git .dotfiles  
 ```  
 
 Copy and link configuration files:  
 
 ```bash  
-cp ~/.dotfiles/.gitconfig ~/.gitconfig  
-cp ~/.dotfiles/config/ssh ~/.ssh/config  
+cp ~/.dotfiles/config/git.gitconfig ~/.gitconfig  
 
-ln -fs ~/.dotfiles/nvim ~/.config/nvim  
+ln -fs ~/.dotfiles/config/nvim ~/.config/nvim  
 ln -fs ~/.dotfiles/config/starship/starship.toml ~/.config/starship.toml  
 ln -fs ~/.dotfiles/config/tmux/.tmux.conf ~/.tmux.conf  
 ```  
