@@ -1,0 +1,43 @@
+[core]
+	editor = nvim
+	quotepath = false
+
+[alias]
+	lg = log --graph --decorate --oneline --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
+	lg2 = log --graph --decorate --oneline --all --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
+	lg3 = log --graph --decorate --oneline --branches --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
+	fa = fetch --all
+	st = status
+	pl = pull
+	ps = push
+	c = commit
+	co = checkout
+	cp = cherry-pick
+ 	find-merge = "!sh -c 'commit=$0 && branch=${1:-HEAD} && (git rev-list $commit..$branch --ancestry-path | cat -n; git rev-list $commit..$branch --first-parent | cat -n) | sort -k2 -s | uniq -f1 -d | sort -n |  tail -1 | cut -f2'"
+    show-merge = "!sh -c 'merge=$(git find-merge $0 $1) && [ -n \"$merge\" ] && git show $merge'"
+
+[user]
+	name = Wenzhao Hu
+	email = 12122021+wzhudev@users.noreply.github.com
+
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+
+[pull]
+	ff = only
+	default = current
+
+[push]
+	autoSetupRemote = true # this requires a higher version of Git
+
+[init]
+	defaultBranch = main
+
+[http]
+	proxy = http://127.0.0.1:7890 # Use proxy for Git
+
+[url "https://github.com/"]
+	insteadOf = git@github.com:
