@@ -10,7 +10,7 @@ I primarily use WSL as my main development environment.
 
 ### Editor  
 
-I rely on two editors: Visual Studio Code and Neovim. These days, I do most of my coding in Neovim. However, for company projects, I use VS Code because it performs better with large codebases and offers superior GitHub integration, especially for reviewing pull requests. For Neovim, I use [LazyVim](https://lazyvim.org) with minimal customizations.  
+I rely on two editors: [Visual Studio Code](https://code.visualstudio.com/) and Neovim. These days, I do most of my coding in Neovim. However, for company projects, I use VS Code because it performs better with large codebases and offers superior GitHub integration, especially for reviewing pull requests. For Neovim, I use [LazyVim](https://lazyvim.org) with minimal customizations.  
 
 ### TUI Apps
 
