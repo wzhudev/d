@@ -8,7 +8,7 @@ Use Homebrew to install the necessary applications:
 
 ```sh
 brew install git bash
-brew install visual-studio-code raycast hammerspoon microsoft-edge ghostty
+brew install visual-studio-code raycast hammerspoon google-chrome ghostty
 brew install --cask docker
 ```
 

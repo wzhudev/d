@@ -28,7 +28,7 @@ Some of my preferred TUI apps include:
 
 ### GUI Apps
 
-I’ll also introduce other GUI apps in platform-specific guides.  
+I'll also introduce other GUI apps in platform-specific guides.  
 
 ## Setup (Windows & WSL)  
 
@@ -37,4 +37,3 @@ Follow the setup guides for [Windows](./platforms/windows/README.md) and [WSL](.
 ## Setup (macOS)  
 
 Refer to the [macOS setup guide](./platforms/mac/README.md).  
-

@@ -10,7 +10,6 @@ winget install -e --id Microsoft.VisualStudioCode
 
 Additionally, install the following applications to enhance usability (not directly related to development):  
 
-- **Auto Dark Mode**: Available on the Microsoft Store; automatically toggles Dark Mode.  
 - **Microsoft PowerToys**: Install via the Microsoft Store for various productivity utilities.  
 - **[Window Switcher](https://github.com/sigoden/window-switcher)**: Allows switching between windows of the same application.  
 
@@ -54,4 +53,3 @@ winget install --id GitHub.cli
 winget install -e --id Rustlang.Rustup  
 winget install -e --id CoreyButler.NVMforWindows  
 ```  
-
