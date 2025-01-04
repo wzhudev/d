@@ -1,5 +1,6 @@
 local configFileWatcher
-function reloadConfig()
+
+local function reloadConfig()
 	configFileWatcher:stop()
 	configFileWatcher = nil
 	hs.reload()
@@ -17,7 +18,7 @@ function getWinList(name)
 		:getWindows()
 end
 
-function launchOrNextWindow(name, showName)
+local function launchOrNextWindow(name, showName)
 	local findName = showName or name
 	local appName = hs.application.frontmostApplication():name()
 
